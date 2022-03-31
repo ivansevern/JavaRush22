@@ -1,8 +1,8 @@
 package com.javarush.task.task02.task0204;
 /*
-В методе main создай объект Man, сохрани ссылку на него в переменную man
-Создай также объект Woman и сохрани ссылку на него в переменную woman
+О семейных отношениях
  */
+
 public class Solution {
     public static void main(String[] args) {
         //write this code
