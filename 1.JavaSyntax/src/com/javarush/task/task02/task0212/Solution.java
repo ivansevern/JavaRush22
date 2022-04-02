@@ -1,8 +1,9 @@
 package com.javarush.task.task02.task0212;
 
-/**
- * Create 10 perem type of a Cat and 8 objects type of Cat
- */
+/*
+Великолепная восьмерка
+*/
+
 public class Solution {
     public static void main(String[] args) {
         //write this code
@@ -13,7 +14,7 @@ public class Solution {
         Cat cat5 = new Cat();
         Cat cat6 = new Cat();
         Cat cat7 = new Cat();
-        Cat cat8 = new Cat();
+        Cat cat8 = new Cat(); //создал 10 объектов Cat() и проинициализировал 8 переменных cat
         Cat cat9;
         Cat cat10;
     }
