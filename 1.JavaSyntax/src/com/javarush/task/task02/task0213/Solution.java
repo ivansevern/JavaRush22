@@ -1,12 +1,9 @@
 package com.javarush.task.task02.task0213;
 
-/**
- * Create object type of Cat,
- * object type of Dog,
- * object type of Fish,
- * object type of Woman
- * and give each animals an owner
- */
+/*
+Питомцам нужны люди
+*/
+
 public class Solution {
     public static void main(String[] args) {
         //write this code
