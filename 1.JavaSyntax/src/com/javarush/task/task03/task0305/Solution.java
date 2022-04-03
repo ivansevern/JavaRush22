@@ -1,12 +1,12 @@
 package com.javarush.task.task03.task0305;
 
+/*
+Я так давно родился
+*/
 
-/**
- * вывести дату рождения в формате MAY 1 2012
- */
 public class Solution {
     public static void main(String[] args) {
-        //writethis code
+        //напишите тут ваш код
 
         System.out.println("MAY 20 1984");
     }
