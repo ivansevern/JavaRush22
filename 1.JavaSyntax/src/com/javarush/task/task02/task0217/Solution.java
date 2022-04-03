@@ -1,21 +1,22 @@
 package com.javarush.task.task02.task0217;
-//TODO: мин из 4 чисел
-/**
- * write function min 0f 4 numbers
- */
+
+/*
+Минимум четырех чисел
+*/
+
 public class Solution {
     public static int min(int a, int b, int c, int d){
         //write this code
-        if (min(a, b) < min(c, d))
-            return min(a, b);
-        else
-            return min(c, d);
+        //вызов метода min(a, b) вернет min из a и b
+        //вызов метода min(c, d) вернет min из c и d
+        //результат min(a, b) и min(c, d) вернет min из a, b, c, d
+        return min(min(a, b), min(c, d));
     }
     public static int min(int a, int b){
         //write this code
-        if (a<b)
-            return a;
-        else return b;
+        if (a<b)       //если истина
+            return a;  //возвращаем a
+        else return b; //иначе возвращаем b
     }
 
     public static void main(String[] args) {
