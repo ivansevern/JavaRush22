@@ -1,8 +1,9 @@
 package com.javarush.task.task02.task0219;
-//TODO: print вывод на экран
+
 /*
-The method should display the passed(word) on the screen 3 times separated by a space
- */
+Печатаем трижды
+*/
+
 public class Solution {
     public static void print3(String text){
         //write this code
