@@ -1,14 +1,14 @@
 package com.javarush.task.task03.task0307;
-//TODO: создание объектов класса
+
 /*
-Create 5 Zerg, 3 Protoss, 4 Terran
-Give them all name
- */
+Привет StarCraft!
+*/
+
 public class Solution {
     public static void main(String[] args) {
         //write this code
-        Zerg zerg1 = new Zerg();
-        zerg1.name = "zerg1";
+        Zerg zerg1 = new Zerg(); //создаю объект класса Zerg
+        zerg1.name = "zerg1";    //присваиваю имя
         Zerg zerg2 = new Zerg();
         zerg2.name = "zerg2";
         Zerg zerg3 = new Zerg();
