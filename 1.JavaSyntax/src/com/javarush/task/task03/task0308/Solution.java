@@ -1,15 +1,17 @@
 package com.javarush.task.task03.task0308;
-//TODO: вывод решний циклом
+
 /*
-вывусти произведение чисел от 1 до 10
+Произведение 10 чисел
  */
+
 public class Solution {
     public static void main(String[] args) {
         //write this code
-        int num = 1;
-        for (int i = 1; i < 11; i++) {
-        num = num*i;
+        int result = 1;
+        for (int i = 2; i <= 10; i++) {
+            result *= i;
         }
-        System.out.println(num);
+
+        System.out.println(result);
     }
 }
