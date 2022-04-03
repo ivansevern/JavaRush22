@@ -1,13 +1,13 @@
 package com.javarush.task.task03.task0304;
 
-/**
- * write method addTenPercent which увеличивает ццелое число на 10%
- */
+/*
+Задача на проценты
+*/
+
 public class Solution {
     public static double addTenPercent(int i){
         //write this code
-        double a = i + (i*0.1);
-        return a;
+        return i * 1.1;
     }
 
     public static void main(String[] args) {
