@@ -1,8 +1,9 @@
 package com.javarush.task.task02.task0216;
-//TODO: минимум из 3 чисел
-/**
- * write function min of 3 numbers
- */
+
+/*
+Минимум 3 чисел
+*/
+
 public class Solution {
     public static int min(int a, int b, int c){
         //write this code
@@ -10,18 +11,13 @@ public class Solution {
         if (b<m)  m=b;
         if (c<m) m=c;
         return m; */
-     /*   if (a<=b && a<=c){
-            return a;}
-       else if (c<=b && a>=c){
-            return c;}
-       else {
-        return b;} */
-        if (a<=b && a<=c)
-            return a;
-       if (c<=b && a>=c)
-            return c;
-        else
-            return b;
+
+        if (a<=b && a<=c) //если 1 условие истина и 2 условие истина
+            return a;     //возвращаем a
+       if (c<=b && a>=c)  //иначе если 1 условие истина и 2 условие истина
+            return c;     //возвращаем c
+        else              //иначе
+            return b;     //возвращаем b
 
     }
 
