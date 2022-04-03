@@ -1,14 +1,15 @@
 package com.javarush.task.task02.task0214;
 
-/**
- * Write function, which return min of 2 numbers
- */
+/*
+Минимум двух чисел I Java Syntax: 2 уровень, 8 лекция 7
+*/
+
 public class Solution {
     public static int min(int a, int b){
         //write this code
-        if (a<b)
-            return a;
-        else return b;
+        if (a<b)       //если условие истина
+            return a;  //возвращаем a
+        else return b; //иначе возвращаем b
     }
 
     public static void main(String[] args) {
