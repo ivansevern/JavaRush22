@@ -1,17 +1,16 @@
 package com.javarush.task.task03.task0311;
-//TODO: выод на экран с изменение через метод
-/**
- * реализуй метод  public static void writeToConsole(String s)
- * который добавляет к началу строки выражение printing
- * и выводит измененную строку на экран
- */
+
+/*
+Печатаем строки
+*/
+
 public class Solution {
     public static void main(String[] args) {
-        writeToConsole("Hello");
+        writeToConsole("Hello world!");
     }
 
     public static void writeToConsole(String s){
         //write this code
-        System.out.println("printing " + s);
+        System.out.println("printing: " + s);
     }
 }
