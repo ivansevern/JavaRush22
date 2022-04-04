@@ -1,0 +1,16 @@
+Вывести на экран следующий текст - две строки:
+It's a Windows path: "C:\ProgramFiles\Java\jdk1.7\bin"
+It's a Java string^ \"C:\\ProgramFiles\\Java\\jdk1.7\\bin\"
+
+Подсказка:
+\" - экранирование двойной кавычки;
+\\ - экранирование обратной косой черты(\).
+
+Больше про экранирование символов и Escape-последовательности в Java читай в:
+https://javarush.com.ua/groups/posts/614-----ehkranirovanie-simvolov-v-java
+
+Требования:
+ Программа должна выводить текст.
+ Должно быть выведено две строки.
+ Текст первой строки должен быть: It's a Windows path: "C:\ProgramFiles\Java\jdk1.7\bin"
+ Текст второй строки должен быть: It's a Java string^ \"C:\\ProgramFiles\\Java\\jdk1.7\\bin\"
