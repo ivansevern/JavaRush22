@@ -1,15 +1,19 @@
 package com.javarush.task.task03.task0315;
 
-/**
- * Create 7 objects, that display to screen
- * 7 colors of the rainbow
- */
+/*
+Каждый охотник желает знать...
+*/
+
 public class Solution {
     public static void main(String[] args) {
         //write this code
-        Red red = new Red();
-        Orange orange = new Orange();
-
+        new Red();
+        new Orange();
+        new Yellow();
+        new Green();
+        new Blue();
+        new Indigo();
+        new Violet();
     }
 
     public static class  Red{
