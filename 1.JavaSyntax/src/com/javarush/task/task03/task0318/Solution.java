@@ -1,22 +1,21 @@
 package com.javarush.task.task03.task0318;
 
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-/**
- * Ввести с клав число и имя
- * вывести на экран
- * "имя" захватит ми через "число" лет. Му-ха-ха
- */
+/*
+План по захвату мира
+*/
+
 public class Solution {
     public static void main(String[] args) throws Exception{
         //write this code
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(reader.readLine());
+//        int years = Integer.parseInt(reader.readLine());  //парсинг числа в текст
+        String years = reader.readLine();
         String name = reader.readLine();
 
-System.out.println(name + " захватит мир через " + n + "лет. Му-ха-ха");
+System.out.println(name + " захватит мир через " + years + " лет. Му-ха-ха!");
 
 
 
