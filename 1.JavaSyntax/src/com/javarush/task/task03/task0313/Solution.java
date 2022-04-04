@@ -1,13 +1,12 @@
 package com.javarush.task.task03.task0313;
 
-/**
- * Вывести на экран все возможные комбинацции слов
- * Мама мыла Раму
- * 6шт
- */
+/*
+Мама мыла раму
+*/
+
 public class Solution {
     public static void main(String[] args) {
-        //wwrite this code
+        //write this code
         String a = "Мама";
         String b = "Мыла";
         String c = "Раму";
