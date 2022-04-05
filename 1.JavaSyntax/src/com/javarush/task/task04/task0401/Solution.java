@@ -1,5 +1,9 @@
 package com.javarush.task.task04.task0401;
 
+/*
+Мне не подходит этот возвраст..
+*/
+
 public class Solution {
     public static void main(String[] args) {
         Person person = new Person();
@@ -12,7 +16,7 @@ public class Solution {
         public int age = 20;
 
         public void adjustAge(int age){
-            this.age = age + 20;
+            this.age = age + 20; // age -> this.age
             System.out.println("Age in adjustAge() is: " + age);
         }
     }
