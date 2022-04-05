@@ -1,16 +1,15 @@
 package com.javarush.task.task04.task0406;
 
-/**
- * Допиши код метода  setName
- * чтобы с помощью его установить значение private String fullName
- * равное значению локальной пееменной String fullName
- */
+/*
+Программа учета имен
+*/
+
 public class Cat {
     private String fullName;
 
-    public void setName(String firstName, String lastMame){
-        String fullname = firstName + " " + lastMame;
-        //write tis code
+    public void setName(String firstName, String lastName){
+        String fullName = firstName + " " + lastName;
+        //write this code
         this.fullName = fullName;
     }
 
