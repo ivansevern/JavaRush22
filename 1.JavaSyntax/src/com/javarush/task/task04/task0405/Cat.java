@@ -1,5 +1,8 @@
 package com.javarush.task.task04.task0405;
-//метод должен устанавливать кол-во котов
+/*
+Задаем количество котов
+ */
+
 public class Cat {
     private static int catsCount = 0;
 
