@@ -1,12 +1,9 @@
 package com.javarush.task.task04.task0408;
-//TODO: if else
-/**
- * написать метод compare(int number) чтобы он
- * выводил на экран строку
- * ЧИСЛО МЕНЬШЕ 5
- * ЧИСЛО БОЛЬШЕ 5 если больше 5
- * ЧИСЛО РАВНО 5
- */
+
+/*
+Хорошо или плохо?
+*/
+
 public class Solution {
     public static void main(String[] args) {
         compare(3);
@@ -14,13 +11,14 @@ public class Solution {
         compare(5);
     }
 
-    public static void compare(int number){
+    public static void compare(int number) {
         //write this code
         if (number<5)
             System.out.println("ЧИСЛО МЕНЬШЕ 5");
        else if (number>5)
             System.out.println("ЧИСЛО БОЛЬШЕ 5");
-       else   if (number == 5)
+       else {
             System.out.println("ЧИСЛО РАВНО 5");
+        }
     }
 }
