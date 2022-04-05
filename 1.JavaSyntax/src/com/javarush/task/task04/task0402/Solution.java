@@ -1,9 +1,9 @@
 package com.javarush.task.task04.task0402;
 
-/**
- * Посчитай суммарную стоимость яблок
- * За суммарную стоимость яблок отвечает переменная public static int applesPrice
- */
+/*
+Цена яблок
+*/
+
 public class Solution {
     public static void main(String[] args) {
         Apple apple = new Apple();
@@ -18,7 +18,7 @@ public class Solution {
 
         public static void addPrice(int applesPrice){
             //write this code
-            Apple.applesPrice = applesPrice+applesPrice;
+            Apple.applesPrice = Apple.applesPrice+applesPrice;
         }
     }
 }
