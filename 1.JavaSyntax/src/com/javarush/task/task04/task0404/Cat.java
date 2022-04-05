@@ -1,20 +1,18 @@
 package com.javarush.task.task04.task0404;
 
-/**
- * Написать код в методе addNewCat
- * чтобы при его вызове кол-во котов увеличивалось на 1
- * за кол-во котов отвечает переменная catsCount
- */
+/*
+Учет котов
+*/
+
 public class Cat {
     private static int catsCount = 0;
 
     public static void addNewCat(){
         //write this code
-        Cat.catsCount = catsCount+1;   // присваиваем ссылку переменной и прибавляем
+        catsCount++;   // инкрементируем на +1 счетчик
     }
 
     public static void main(String[] args) {
-
 
     }
 }
