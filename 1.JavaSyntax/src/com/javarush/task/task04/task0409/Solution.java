@@ -1,17 +1,31 @@
 package com.javarush.task.task04.task0409;
-//TODO: вывод ближайшего число к 10
-/**
- * Метод должен выводить на экран ближайшие к 10 из 2 чисел, записанных в аргументах метода
- */
+
+/*
+Ближайшее к 10
+*/
+
 public class Solution {
     public static void main(String[] args) {
         displayClosestToTen(8, 11);
         displayClosestToTen(7,14);
 
     }
-    public static void displayClosestToTen(int a, int b){
-/*
+    public static void displayClosestToTen(int a, int b) {
         //write this code
+        System.out.println(abs(a - 10) <= abs(b - 10) ? a : b);
+    }
+
+    public static int abs(int a) {
+        if (a < 0) {
+            return -a;
+        }
+        else {
+            return a;
+        }
+    }
+}
+
+/*
         if ((abs(a - 10)) < (abs(b - 10))) {
             System.out.println(a);
         }
@@ -22,18 +36,7 @@ public class Solution {
             System.out.println(a+" "+b);
         }
 */
-        if (abs(a-10)<abs(b-10))
-            System.out.println(a);
-        else
-            System.out.println(b);
-
-    }
-    public static int abs(int a){
-        if (a < 0) {
-            return -a;
-        }
-        else {
-            return a;
-        }
-    }
-}
+//        if (abs(a-10)<abs(b-10))
+//            System.out.println(a);
+//        else
+//            System.out.println(b);
