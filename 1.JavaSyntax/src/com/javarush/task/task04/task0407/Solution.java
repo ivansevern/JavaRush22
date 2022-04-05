@@ -1,18 +1,19 @@
 package com.javarush.task.task04.task0407;
-//TODO: счетчик
-/**
- * Написать код чтобы правильно считалось кол-во созданных котов(count)
- * и на экран выводилось их правильное кол-во
- */
+
+/*
+Кошки во Вселенной
+*/
+
 public class Solution {
     public static void main(String[] args) {
         Cat cat1 = new Cat();
-        //wwrite this code
+        //write this code
         Cat.count++;
+
         Cat cat2 = new Cat();
         //write this code
         Cat.count++;
-        System.out.println("The catcount is " + Cat.count);
+        System.out.println("The cat count is " + Cat.count);
     }
 
     public static class Cat {
