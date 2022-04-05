@@ -1,14 +1,14 @@
 package com.javarush.task.task04.task0403;
-//TODO: присваиваем имя через Set
-/**
- * дать имя коту с помощью метода setName
- */
+
+/*
+Как зовут кота?
+*/
+
 public class Cat{
     private String name = "безымянный кот";
 
     public void setName(String name){
-        //wwrite this code
-
+        //write this code
         this.name = name;
 
     }
