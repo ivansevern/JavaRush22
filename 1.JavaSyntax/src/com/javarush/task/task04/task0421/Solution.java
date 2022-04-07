@@ -1,19 +1,16 @@
 package com.javarush.task.task04.task0421;
 //TODO: ввод строк и сравнивание длин
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-/**
- * Ввести с клав 2 имени
- * и если имена  одинаковые вывести сообщение
- * Имена идентичны
- * Если имена разные, но их длины равны вывести
- * Длины имен равны
- * иначе ничего не выводить
- */
+/*
+Настя или Настя?
+*/
+
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //write tis code
+        //write this code
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String name1 = reader.readLine();
         String name2 = reader.readLine();
