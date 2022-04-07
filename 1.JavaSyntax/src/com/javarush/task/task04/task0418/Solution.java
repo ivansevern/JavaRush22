@@ -1,15 +1,14 @@
 package com.javarush.task.task04.task0418;
-//TODO: ввод 2 чисел и вывод мин из них
+
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * ввести с клав 2 целых числа и вывести минимальное из нх
- * если 2 числа равны вывести любое
- */
+/*
+Минимум двух чисел I Java Syntax: 4 уровень, 6 лекция
+*/
+
 public class Solution {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         //write this code
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int a = Integer.parseInt(reader.readLine());
