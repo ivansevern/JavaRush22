@@ -1,52 +1,52 @@
 package com.javarush.task.task04.task0420;
 //TODO: ввод 3 чисел и вывод по убыванию
+
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * ввести с клав 3 числа и вывести их по убыванию через пробел
- *
- */
+/*
+Сортировка трех чисел
+*/
+
 public class Solution {
-    public static void main(String[] args) throws IOException {
-        //write tis code
+    public static void main(String[] args) throws Exception {
+        //write this code
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int a1 = Integer.parseInt(reader.readLine());
-        int b2 = Integer.parseInt(reader.readLine());
-        int c3 = Integer.parseInt(reader.readLine());
-//        if (a1 <=b2 && a1 <= c3) {
-//            if (b2 <= c3) {
-//                System.out.println(c3 + " " + b2 + " " + a1);
-//            }
-//            else {
-//                System.out.println(b2 + " " + c3 + " " + a1);
-//            }
-//        } else if (b2 <= a1 && b2 <= c3) {
-//            if (a1 <= c3) {
-//                System.out.println(c3 + " " + a1 + " " + b2);
-//            }
-//            else {
-//                System.out.println(a1 + " " + c3 + " " + b2);
-//            }
-//        }
-//        else {
-//            if (a1 <= b2) {
-//                System.out.println(b2 + " " + a1 + " " + c3);
-//            }
-//            else {
-//                System.out.println(a1 + " " + b2 + " " + c3);
-//            }
-//        }
-        if (a1<=b2 & b2<=c3) { System.out.println(c3 + " " + b2 + " " + a1);}
-        else if (a1<=c3 & c3<=b2) { System.out.println(b2 + " " + c3 + " " + a1);}
-        else if (b2<=a1 & a1<=c3) { System.out.println(c3 + " " + a1 + " " + b2);}
-        else if (b2<=c3 & c3<=a1) { System.out.println(a1 + " " + c3 + " " + b2);}
-        else if (c3<=b2 & b2<=a1) { System.out.println(a1 + " " + b2 + " " + c3);}
-        else if (c3<=a1 & a1<=b2) { System.out.println(b2 + " " + a1 + " " + c3);}
-
-
-
+        int a = Integer.parseInt(reader.readLine());
+        int b = Integer.parseInt(reader.readLine());
+        int c = Integer.parseInt(reader.readLine());
+        if (a <= b && a <= c) {
+            if (b <= c) {
+                System.out.println(c + " " + b + " " + a);
+            } else {
+                System.out.println(b + " " + c + " " + a);
+            }
+        } else if (b <= a && b <= c) {
+            if (b <= c) {
+                System.out.println(c + " " + a + " " + b);
+            } else {
+                System.out.println(a + " " + c + " " + b);
+            }
+        } else {
+            if (a <= b) {
+                System.out.println(b + " " + a + " " + c);
+            } else {
+                System.out.println(a + " " + b + " " + c);
+            }
+        }
+       /* if (a <= b & a <= c) {
+            System.out.println(c + " " + b + " " + a);
+        } else if (a <= c & c <= b) {
+            System.out.println(b + " " + c + " " + a);
+        } else if (b <= a & a <= c) {
+            System.out.println(c + " " + a + " " + b);
+        } else if (b <= c & c <= a) {
+            System.out.println(a + " " + c + " " + b);
+        } else if (c <= b & b <= a) {
+            System.out.println(a + " " + b + " " + c);
+        } else if (c <= a & a <= b) {
+            System.out.println(b + " " + a + " " + c);
+        }*/
 
 
     }
