@@ -1,15 +1,15 @@
 package com.javarush.task.task04.task0436;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * Ввести с клав 2 числа m и n
- * Используя цикл For вывести прямоугольник размером m*n из 8
- */
+/*
+Рисуем прямоугольник
+*/
+
 public class Solution {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
+        //напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int m = Integer.parseInt(reader.readLine());
         int n = Integer.parseInt(reader.readLine());
