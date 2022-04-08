@@ -1,23 +1,21 @@
 package com.javarush.task.task04.task0432;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * Ввести с клав строку N больше 0
- *Вывести строку N раз используя цикл While
- * каждый раз с новой строки
- */
+/*
+Хорошего много не бывает
+*/
+
 public class Solution {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         //write this code
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String str = reader.readLine();
-        int N = Integer.parseInt(reader.readLine());
-        while (N>0) {                //если число больше 0
-            System.out.println(str); //то выводим сообщение
-            N--;                     //от введенного числа до 1
+        int number = Integer.parseInt(reader.readLine());
+        while (number > 0) {                //если число больше 0
+            System.out.println(str);        //то выводим сообщение
+            number--;                       //от введенного числа до 1
         }
     }
 }
