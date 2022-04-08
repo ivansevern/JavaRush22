@@ -1,11 +1,11 @@
 package com.javarush.task.task04.task0437;
-//TODO: вывести треугольник из 8 10х10 циклом for
-/**
- * Используя цикл For
- * вывести треугольник из 8 10х10
- */
+
+/*
+Треугольник из восьмерок
+*/
+
 public class Solution {
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         //write this code
         int a = 10;
         for (int i = 0; i < a; i++) {
@@ -13,8 +13,6 @@ public class Solution {
                 System.out.print('8');
             }
             System.out.println();
-
-
         }
     }
 }
