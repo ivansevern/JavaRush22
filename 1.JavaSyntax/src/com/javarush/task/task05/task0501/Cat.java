@@ -1,17 +1,17 @@
 package com.javarush.task.task05.task0501;
 
-/**
- * Создать класс Cat
- * У кота должно быть
- * name -String, age - int, weight - int, strenght - int
- */
+/*
+Создание кота
+*/
+
 public  class Cat {
-    String name;
-    int age, weigth, strength;
+    //напишите тут ваш код
+    public String name;
+    protected int age;
+    int weight;
+    private int strength;
 
     public static void main(String[] args){
-
-
     }
 }
 
