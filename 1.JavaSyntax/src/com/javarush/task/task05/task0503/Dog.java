@@ -1,10 +1,9 @@
 package com.javarush.task.task05.task0503;
-//TODO: Гетры и Сетеры для класса
-/**
- * Создай класс DOG
- * У собаки должна быть кличка String name и возвраст int Age
- * Создай геттеры и сеттеры для всех переменных класса Dog
- */
+
+/*
+Геттеры и сеттеры для класса Dog
+*/
+
 public class Dog {
     //write this code
     public String name;    //создаю переменные
@@ -25,6 +24,7 @@ public class Dog {
     public void setAge(int age) {
         this.age=age;
     }
+
     public static void main(String[] args) {
 
     }
