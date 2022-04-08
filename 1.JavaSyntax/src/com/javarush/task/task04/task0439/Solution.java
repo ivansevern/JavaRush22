@@ -1,20 +1,26 @@
 package com.javarush.task.task04.task0439;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * Ввести с клав имя и циклом For 10 раз вывести
- * <name>любит меня
- */
+/*
+Письмо счастья
+*/
+
 public class Solution {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         //write this code
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String name = reader.readLine();
+
+        String text = name + " любит меня.";
+
         for (int i = 0; i < 10; i++) {
-            System.out.println(name + " любит меня");
+            System.out.println(text);
         }
+
+        /*for (int i = 0; i < 10; i++) {
+            System.out.println(name + " любит меня");
+        }*/
     }
 }
