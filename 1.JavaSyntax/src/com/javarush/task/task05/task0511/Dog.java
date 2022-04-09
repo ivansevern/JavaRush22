@@ -1,11 +1,9 @@
 package com.javarush.task.task05.task0511;
 
-/**
- * Создать class Dog с 3 инициализаторами
- * Имя
- * Имя, рост
- * Имя, рост, цвет
- */
+/*
+Создать класс Dog
+*/
+
 public class Dog {
     //write this code
     public String name;
@@ -14,14 +12,11 @@ public class Dog {
 
     public void initialize(String name) {
         this.name = name;
-        this.height = 1;
-        this.color = "black";
     }
 
     public Dog(String name, int height) {
         this.name = name;
         this.height = height;
-        this.color = "black";
     }
 
     public Dog(String name, int height, String color) {
