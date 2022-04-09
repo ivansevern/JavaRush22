@@ -1,18 +1,14 @@
 package com.javarush.task.task05.task0506;
 
-/**
- * Создать class Person
- * У каждого человека должно быть
- * name String
- * age int
- * adress String
- * sex char
- */
+/*
+Человечки
+*/
+
 public class Person {
     //write this code
     String name;    //создаю переменные
     int age;
-    String adress;
+    String address;
     char sex;
 
     public static void main(String[] args) {
