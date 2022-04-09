@@ -1,11 +1,9 @@
 package com.javarush.task.task05.task0516;
 
-/**
- * Создать class Friend с 3 конструкторами
- * Имя
- * Имя, возвраст
- * Имя, возвраст,пол
- */
+/*
+Друзей не купишь
+*/
+
 public class Friend {
     //write this code
     String name;
@@ -26,7 +24,6 @@ public class Friend {
         this.age = age;
         this.sex = sex;
     }
-
 
     public static void main(String[] args) {
 
