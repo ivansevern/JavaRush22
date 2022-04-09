@@ -1,16 +1,26 @@
 package com.javarush.task.task06.task0613;
 
-/**
- * В class Cat создай статич переменную public int Catcount
- * Создай конструктор public Cat()
- * Пусть при каждом создании кота статич переменная Catcount увеличивается на 1
- * Создать 10 объектов Cat и вывести значение переменной Catcount на экран
- */
+/*
+Кот и статика
+*/
+
 public class Solution {
     public static void main(String[] args) {
+        //создай 10 котов
         //write this code
-        for (int i = 0; i < 10; i++)
-            new Cat();
+        Cat cat1 = new Cat();
+        Cat cat2 = new Cat();
+        Cat cat3 = new Cat();
+        Cat cat4 = new Cat();
+        Cat cat5 = new Cat();
+        Cat cat6 = new Cat();
+        Cat cat7 = new Cat();
+        Cat cat8 = new Cat();
+        Cat cat9 = new Cat();
+        Cat cat10 = new Cat();
+
+        /*for (int i = 0; i < 10; i++)
+            new Cat();*/
         System.out.println(Cat.catCount);
     }
 
