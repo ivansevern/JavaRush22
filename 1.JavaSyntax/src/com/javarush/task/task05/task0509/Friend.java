@@ -1,12 +1,9 @@
 package com.javarush.task.task05.task0509;
 
-/**
- * Создать class Friend с 3 инициализаторами (3 методами initialize)
- * Имя
- * Имя, возвраст
- * Имя, возвраст, пол
- *
- */
+/*
+Создать класс Friend
+*/
+
 public class Friend {
     //write this code
     public String name;       //заполняю класс
@@ -16,6 +13,7 @@ public class Friend {
     public void initialize(String name){    //создаю инициализатор
         this.name = name;
     }
+
     public void initialize(String name, int age) {
         this.name = name;
         this.age = age;
@@ -26,8 +24,6 @@ public class Friend {
         this.age = age;
         this.sex = sex;
     }
-
-
 
     public static void main(String[] args) {
     }
