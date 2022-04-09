@@ -1,23 +1,28 @@
 package com.javarush.task.task06.task0602;
 
-/**
- * В каждом классе Cat и Dog написать метод finalize
- * который выводит на экран текст о то, что такой-то объект уничтожен
- */
+/*
+Пустые кошки, пустые псы
+*/
+
 public class Cat {
+
     public static void main(String[] args) {
 
     }
 
     //write this code
+    @Override
     protected void finalize() throws Throwable {
-        System.out.println("Cat destroyed");
+        super.finalize();
+        System.out.println("A Cat was destroyed");
     }
 }
-    class Dog {
-        //write this code
-        protected void finalize() throws Throwable {
-            System.out.println("Dog destroyed");
-        }
-}
 
+class Dog {
+    //write this code
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+        System.out.println("A Dog was destroyed");
+    }
+}
