@@ -1,11 +1,9 @@
 package com.javarush.task.task05.task0512;
 
-/**
- * Создать class Circle с 3 инициализаторами
- * centerX, centerY, radius
- * centerX, centerY, radius, width
- * centerX, centerY, radius, width, color
- */
+/*
+Создать класс Circle
+*/
+
 public class Circle {
     //write this code
     public int centerX, centerY, radius, width, color;
@@ -14,8 +12,6 @@ public class Circle {
         this.centerX = centerX;
         this.centerY = centerY;
         this.radius = radius;
-        this.width = 5;
-        this.color = 1;
     }
 
     public void initialize(int centerX, int centerY, int radius, int width) {
@@ -23,7 +19,6 @@ public class Circle {
         this.centerY = centerY;
         this.radius = radius;
         this.width = width;
-        this.color = 2;
     }
 
     public void initialize(int centerX, int centerY, int radius, int width, int color) {
@@ -33,7 +28,6 @@ public class Circle {
         this.width = width;
         this.color = color;
     }
-
 
     public static void main(String[] args) {
 
