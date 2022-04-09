@@ -1,20 +1,9 @@
 package com.javarush.task.task05.task0520;
 
-/**
- * создать class Rectangle
- * Его данные будут
- * top
- * left
- * width
- * height
- * Создать побольше методов конструкторов
- *
- * Пример
- * 1 заданы все 4 параметра
- * 2 ширина и высота не заданы(оба равны 0)
- * 3 высота не задана (равна ширине) создаем квадрат
- * 4 создаем копию другого прямоугодьника (он и передается в параметрах)
- */
+/*
+Создать класс прямоугольник
+*/
+
 public class Rectangle {
     //write this code
     public int top, left, width, height;
@@ -38,7 +27,7 @@ public class Rectangle {
         this.top = top;
         this.left = left;
         this.width = width;
-        height=width;
+        this.height = width;
     }
 
     public Rectangle(Rectangle rectangle) {
