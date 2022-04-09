@@ -1,9 +1,9 @@
 package com.javarush.task.task06.task0603;
 
-/**
- * Создать в цикле по 50000 объектов Cat и Dog
- *
- */
+/*
+По 50000 объектов Cat и Dog
+*/
+
 public class Solution {
     public static void main(String[] args) {
         //write this code
@@ -26,6 +26,6 @@ class Dog {
     @Override
     protected void finalize() throws Throwable {
         super.finalize();
-        System.out.println("A dogwasdestroyed");
+        System.out.println("A Dog was destroyed");
     }
 }
