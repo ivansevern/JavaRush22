@@ -1,0 +1,16 @@
+1.В класс Solution создать public static класс Idea.
+2. В класс Idea создать метод public String getDescription(), который будет возвращать любую строку.
+3. В классе Solution создай статический метод public static void printIdea(Idea idea),
+который будет выводить на экран описание идеи-это то, что возвращает метод getDescription().
+
+Требования:
+
+В класс Solution создать public static класс Idea.
+
+В класс Idea создать метод public String getDescription().
+
+Метод getDescription должен возвращать любую строку.
+
+В классе Solution создай статический метод public static void printIdea(Idea idea)
+
+Метод printIdea должен выводить описание идеи на экран.
