@@ -1,14 +1,9 @@
 package com.javarush.task.task05.task0514;
 
-/**
- * Создать class Person
- * У человека должно быть:
- * String name
- * int age
- * Добавь метод initialize(String name, int age) в котором проинициализируешь переменные name и age
- * В методе main создай объект Person, занеси его ссылку в переменную рerson
- * Вызови метод initialize с любыми значениями
- */
+/*
+Программист создает человека
+*/
+
 public class Solution {
     public static void main(String[] args) {
         //write this code
@@ -18,14 +13,12 @@ public class Solution {
 
     static class Person {
         //write this code
-        public String name; //даю поля
-        public int age;
-
+        String name;
+        int age;
 
         public void initialize(String name, int age) { //инициализирую переменные
             this.name = name;
             this.age = age;
         }
     }
-
 }
