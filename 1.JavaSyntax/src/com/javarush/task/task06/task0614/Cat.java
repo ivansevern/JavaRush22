@@ -3,13 +3,10 @@ package com.javarush.task.task06.task0614;
 
 import java.util.ArrayList;
 
-/**
- * В class Cat добавь публичную статич переменную cats(ArrayList<Cat>)
- * Пусть при каждом создании кота в переменную cats добавляется этот новый кот
- * Создать 10 котов
- * Метод printCats должен выводить всех котов на экран
- * Нужно использовать переменную cats
- */
+/*
+Статические коты
+*/
+
 public class Cat {
     // write this code
     public static ArrayList<Cat> cats = new ArrayList<>();
