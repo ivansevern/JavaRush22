@@ -1,0 +1,14 @@
+Создай класс с именем KissMyShinnyMetalAss.
+Создай объект этого класса, выведи его на экран.
+
+Требования:
+
+Создай класс KissMyShinnyMetalAss внутри класса Solution.
+
+Класс KissMyShinnyMetalAss должен быть статическим.
+
+Класс KissMyShinnyMetalAss должен быть public.
+
+В методе main создай объект класса KissMyShinnyMetalAss.
+
+В методе main выведи объект класса KissMyShinnyMetalAss на экран.
