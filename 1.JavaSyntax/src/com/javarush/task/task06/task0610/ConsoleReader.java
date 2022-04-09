@@ -3,14 +3,10 @@ package com.javarush.task.task06.task0610;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-/**
- * Сделать класс ConsoleReader, у которого будут 4 статических метода
- * String readString() - читает с клав строку
- * int readInt() - читает с клав число
- * readDouble() - читает с клав дробное число
- * readBoolean() - читает с клав строку true или false и возвращает соответствующую логическую переменную true или false
- * Создавай переменную для чтения данных с консоли BuferReader или Scaner внутри каждого метода
- */
+/*
+Класс ConsoleReader
+*/
+
 public class ConsoleReader {
     public static String readString() throws Exception {
         //write this code
