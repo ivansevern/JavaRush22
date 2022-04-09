@@ -1,44 +1,41 @@
 package com.javarush.task.task05.task0531;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * Программа вводит2 числа с клав и выводит минимальное из них
- * переделать чтобы
- * прогрпммавводит 5 чисел с клав и выводит минимальное из них
- */
+/*
+Совершенствуем функциональность
+*/
+
 public class Solution {
-    public static void main(String[] args) throws IOException {
-      /*  BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int a = Integer.parseInt(reader.readLine());
-        int b = Integer.parseInt(reader.readLine());
-
-        int minimum = min(a, b);
-        System.out.println("Minimum = " + minimum);
-    }
-    public static int min(int a, int b) {
-        return a<b ? a:b;
-    }*/
+    public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int a = Integer.parseInt(reader.readLine());
-        int b = Integer.parseInt(reader.readLine());
-        int c = Integer.parseInt(reader.readLine());
-        int d = Integer.parseInt(reader.readLine());
-        int e = Integer.parseInt(reader.readLine());
+        int firstNumber = Integer.parseInt(reader.readLine());
+        int secondNumber = Integer.parseInt(reader.readLine());
+        int thirdNumber = Integer.parseInt(reader.readLine());
+        int fourthNumber = Integer.parseInt(reader.readLine());
+        int fifthNumber = Integer.parseInt(reader.readLine());
 
-        int minimum = min(a, b, c, d, e);
+        int minimum = min(firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber);
         System.out.println("Minimum = " + minimum);
     }
-    public static int min(int a, int b, int c, int d, int e) {
+
+    public static int min(int firstNumber, int secondNumber, int thirdNumber, int fourthNumber, int fifthNumber) {
+        return min(min(firstNumber, secondNumber), min(min(thirdNumber, fourthNumber), fifthNumber));
+    }
+
+    public static int min(int firstNumber, int secondNumber) {
+        return firstNumber < secondNumber ? firstNumber : secondNumber;
+    }
+
+    /*public static int min(int a, int b, int c, int d, int e) {
         int m = a;
         if (a >= b) m = b;
         if (m >= c) m = c;
         if (m >= d) m = d;
         if (m >= e) m = e;
         return m;
-    }
+    }*/
 }
 
 
@@ -51,3 +48,13 @@ return a<b ? a:b;
 }
 }
  */
+      /*  BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int a = Integer.parseInt(reader.readLine());
+        int b = Integer.parseInt(reader.readLine());
+
+        int minimum = min(a, b);
+        System.out.println("Minimum = " + minimum);
+    }
+    public static int min(int a, int b) {
+        return a<b ? a:b;
+    }*/
