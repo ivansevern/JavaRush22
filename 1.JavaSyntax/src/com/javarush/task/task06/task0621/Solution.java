@@ -1,16 +1,7 @@
 package com.javarush.task.task06.task0621;
+
 /*
-Create a class that described this situation. Create 2 objects: a cat-daughter and cat-mother. Take them on the screen.
-New task: each cat has a name, cat dad and cat-mom. Change Cat class so that it can describe this situation.
-Create 6 objects: grandfather (daddy dad), grandmother (mother's mom), dad, mother, son, daughter. To bring them all
-on the screen in order: grandfather, grandmother, dad, mom, son, daughter.
-Input Example:
-Grandpa Vasya
-Grandma Murka
-Pope Kotofee
-Mom Vasilisa
-Son Murchik
-Daughter Puffcint
+Родственные связи кошек
  */
 
 import java.io.BufferedReader;
@@ -47,6 +38,7 @@ public class Solution {
         System.out.println(catDaughter);
 
     }
+
     public static class Cat {
         private String name;
         private Cat mother;
@@ -55,10 +47,12 @@ public class Solution {
         Cat(String name) {
             this.name = name;
         }
+
         Cat(String name, Cat mother) {
             this.name = name;
             this.mother = mother;
         }
+
         Cat(String name, Cat mother, Cat father) {
             this.name = name;
             this.mother = mother;
@@ -67,6 +61,23 @@ public class Solution {
 
         @Override
         public String toString() {
+            if (father == null) {
+                if (mother == null) {
+                    return "The cat's name is " + name + ", no mother, no father";
+                } else {
+                    return "The cat's name is " + name + ", mother is " + mother.name + ", no father";
+                }
+            } else {
+                if (mother == null) {
+                    return "The cat's name is " + name + ", no mother" + " father is  " + father.name;
+                } else {
+                    return "The cat's name is " + name + ", mother is " + mother.name + ", father is " + father.name;
+                }
+            }
+        }
+
+        /* @Override
+        public String toString() {
             if (mother == null && father == null)
                 return "The cat's name is " + name + ", no mother, no father ";
             if (mother != null && father == null)
@@ -74,7 +85,7 @@ public class Solution {
             if (mother == null)
                 return "The cat's name is " + name + ", no mother" + " father is  " + father.name;
             else
-                return " The cat's name is " + name + ", mother is " + mother.name + ", father is " + father.name;
-        }
+                return "The cat's name is " + name + ", mother is " + mother.name + ", father is " + father.name;
+        }*/
     }
 }
