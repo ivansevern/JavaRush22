@@ -1,11 +1,9 @@
 package com.javarush.task.task05.task0518;
 
-/**
- * Создать class Dog с 3 конструкторами
- * 1 Имя
- * 2 Имя, рост
- * 3 Имя, рост, цвет
- */
+/*
+Регистрируем собачек
+*/
+
 public class Dog {
     //write this code
     public String name;
@@ -26,7 +24,6 @@ public class Dog {
         this.height = height;
         this.color = color;
     }
-
 
     public static void main(String[] args) {
 
