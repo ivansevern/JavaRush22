@@ -1,44 +1,25 @@
 package com.javarush.task.task05.task0529;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * Вводить с клавиатуры числа и считать их сумму, пока не введешь слово "сумма"
- * Вывести на экран полученную сумму
- */
+/*
+Консоль-копилка
+*/
+
 public class Solution {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         //write this code
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int a = 0;
         int sum = 0;
         while (true) {
             String s = reader.readLine();
-            if (s.equals("exit")) {
+            if (s.equals("сумма")) {
                 System.out.println(sum);
-            break;
-        }
-        else
-            {
-            a = Integer.parseInt(s);
-            sum += a;
+                return;
             }
-       }
+            int number = Integer.parseInt(s);
+            sum += number;
+        }
     }
 }
-
-/*
-2
-
-int sum = 0;
- while (true) {
-   String s = reader.readLine();
-   if (s.equals("exit)) {
-   System.out.println(sum);
-   return;
-   }
-   int a = Integer.parseInt(s);
-            sum += a;
- */
