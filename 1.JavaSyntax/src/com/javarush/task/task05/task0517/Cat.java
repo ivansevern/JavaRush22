@@ -1,41 +1,36 @@
 package com.javarush.task.task05.task0517;
 
-/**
- * Создать class Cat с 5 конструкторами
- * Имя
- * Имя, вес, возвраст
- * Имя, возвраст (вес стандартный)
- * вес, цвет (имя, адрес, возвраст неизвестные, кот бездомный)
- * вес, цвет, адрес (чужой домашний кот)
- * Задача конструктора сделать объект валидным
- */
+/*
+Конструктор котиков
+*/
+
 public class Cat {
     //write this code
    public String name;
    public int age;
    public int weight;
-   public String adress;
+   public String address;
    public String color;
 
     public Cat(String name) {
         this.age = 5;
         this.name = name;
         this.weight = 5;
-        this.color = "black";
+        this.color = "Black";
     }
 
     public Cat(String name, int weight, int age) {
         this.name = name;
         this.age = age;
         this.weight = weight;
-        this.color = "black";
+        this.color = "Black";
     }
 
     public Cat(String name, int age) {
         this.name = name;
         this.age = age;
         this.weight = 5;
-        this.color = "black";
+        this.color = "Black";
     }
 
     public Cat(int weight, String color) {
@@ -44,10 +39,10 @@ public class Cat {
         this.color = color;
     }
 
-    public Cat(int weight, String color, String adress) {
+    public Cat(int weight, String color, String address) {
         this.age = 5;
         this.weight = weight;
-        this.adress = adress;
+        this.address = address;
         this.color = color;
     }
 
