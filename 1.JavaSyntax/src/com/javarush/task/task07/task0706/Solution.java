@@ -1,39 +1,37 @@
 package com.javarush.task.task07.task0706;
-//TODO: зазделение массива на четные и нечетные числа
+//TODO: разделение массива на четные и нечетные числа
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-/**
- * 1. Создать массив на 15 целых чисел
- * 2. Ввести в него значения с клав
- * 3. Пускай индекс элемента массива является номером дома, а значение - числом жителей, проживающих в доме
- *    Дома с нечетными номерами расположены на одной стороне улицы, с четными на другой
- *    Выяснить на какой стороне улицы проживает больше жителей
- * 4. Вывести на экран сообщение:
- *    В домах с нечетными номерами проживает больше жителей
- *    или
- *    В домах с четными номерами проживает больше жжителей
- *    дос с порядковым номером 0 считать четным
- */
+/*
+Улицы и дома
+*/
+
 public class Solution {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         //write this code
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int countPol =0;
-        int countMin = 0;
-        int[] a = new int[15];                                //1
-        for (int i = 0; i < a.length; i++)                   //2
-            a [i] = Integer.parseInt(reader.readLine());
-            for (int i = 0; i < a.length ; i++)              //3
-               if (i%2==0)                                   //проверяем четные
+        int even = 0;
+        int odd = 0;
+        int[] countPeople = new int[15];
+        for (int i = 0; i < 15; i++) {
+            countPeople[i] = Integer.parseInt(reader.readLine());
+        }
 
-                countPol+=a[i];
-            else
-                countMin+=a[i];
-           if (countPol>countMin)                            //4
-                System.out.println("В домах с четными номерами проживает больше жжителей");
-            else
-                System.out.println("В домах с нечетными номерами проживает больше жителей");
+        for (int i = 0; i < 15; i++) {
+            if (i % 2 == 0) {
+                even += countPeople[i];
+            } else {
+                odd += countPeople[i];
+            }
+        }
+
+        if (even > odd) {
+            System.out.println("В домах с четными номерами проживает больше жжителей");
+        } else if (odd > even){
+            System.out.println("В домах с нечетными номерами проживает больше жителей");
         }
     }
+}
 
