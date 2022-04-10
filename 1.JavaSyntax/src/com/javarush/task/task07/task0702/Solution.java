@@ -1,26 +1,28 @@
 package com.javarush.task.task07.task0702;
-//TODO: создание массива и вывод содержимого
+//TODO: создание массива и вывод содержимого в обратном порядке
+
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * 1. Создать массив на 10 строк
- * 2.Ввести с клав 8 строк и сохранить их в массив
- * 3.Вывести содержимое всего массива (10 элем) на экран в обратном порядке
- * каждый сновой строки
- */
+/*
+Массив строчек в обратном порядке
+*/
+
 public class Solution {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         //write this code
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in)); //2 ввод с клавиатуры
-        String[] a = new String[10]; //3 создаю массив
-        for (int i = 0; i < 8; i++) {  //2 с клав циклом заполняю массив
-            a[i] = reader.readLine();
+        String[] array = new String[10]; //создаю массив
+        for (int i = 0; i < 8; i++) {  //с клав циклом заполняю массив
+            array[i] = reader.readLine();
         }
-            for (int i = a.length-1; i >= 0; i--) {   //3 циклом вывожу
-                System.out.println(a[i]);
-            }
+        for (int i = 9; i >= 0 ; i--) {
+            System.out.println(array[i]);
         }
+
+       /* for (int i = array.length - 1; i >= 0; i--) {   //циклом вывожу
+            System.out.println(array[i]);
+        }*/
     }
+}
 
