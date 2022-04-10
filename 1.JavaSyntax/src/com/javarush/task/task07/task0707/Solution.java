@@ -3,25 +3,28 @@ package com.javarush.task.task07.task0707;
 import java.util.ArrayList;
 
 /*
-1. Создай спиок строк
-2. Добавь в него 5 различных строк
-3. Выведи его размер на экран
-4. Циклом выведи его содержимое на экран
+Что за список такой
  */
+
 public class Solution {
     public static void main(String[] args) {
         //write this code
-        ArrayList<String> list = new ArrayList<>();  //1
-        list.add("1");                               //2
-        list.add("2");
-        list.add("3");
-        list.add("4");
-        list.add("5");
+        ArrayList<String> list = new ArrayList<>();
+        list.add("первая строка");
+        list.add("вторая строка");
+        list.add("третья строка");
+        list.add("четвертая строка");
+        list.add("пятая строка");
 
-        System.out.println(list.size());             //3
-        for (int i = 0; i < list.size(); i++) {      //4
-            System.out.println(list.get(i));
+        System.out.println(list.size());
+
+        for (String string : list) {
+            System.out.println(string);
         }
+
+       /* for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }*/
     }
     
 }
