@@ -1,24 +1,35 @@
 package com.javarush.task.task07.task0714;
-/*
-1. Создать массив на 5
-2. Удалить 3 эелемент
-3. вывести в обратном порядке
- */
+
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+/*
+Слова в обратном порядке
+ */
+
 public class Solution {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<String> list = new ArrayList<>();    //1
+        ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
-            list.add(reader.readLine());               //
+            String string = reader.readLine();
+            list.add(string);
         }
-        list.remove(2);                          //2 - отсчет от 0 в массиве
-        for (int i = list.size()-1; i>=0; i--) {       //3
+
+        list.remove(2);
+
+        for (int i = list.size() - 1; i >= 0 ; i--) {
+            String string = list.get(i);
+            System.out.println(string);
+        }
+
+        /*for (int i = 0; i < 5; i++) {
+            list.add(reader.readLine());
+        }
+        list.remove(2);
+        for (int i = list.size()-1; i>=0; i--) {
             System.out.println(list.get(i));
-        }
+        }*/
     }
 }
