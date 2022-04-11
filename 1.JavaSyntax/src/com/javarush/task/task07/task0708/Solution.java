@@ -1,35 +1,33 @@
 package com.javarush.task.task07.task0708;
-//TODO: вывод мак длинных строк ArrayList
-/*
-1. Создать список строк
-2. Считай с клавиатуры 5 строк и добавь в список
-3. Циклом найди самую длинную строку в списке
-4. Выведи найденную строку, если несколько вывести все с новой строки
- */
+//TODO: вывод максимально длинных строк ArrayList
+
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+
+/*
+Самая длинная строка
+ */
 
 public class Solution {
     private static ArrayList<String> strings;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         //write this code
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        strings = new ArrayList<>();       //1
+        strings = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
-           strings.add(reader.readLine());                   //2
+            strings.add(reader.readLine());
         }
-        int maxLength = strings.get(0).length();             //3
+        int maxLength = strings.get(0).length();
         for (String string : strings) {
-            if (string.length()>maxLength){
+            if (string.length() > maxLength) {
                 maxLength = string.length();
             }
-          }
-        for (String tring : strings) {                      //4
-            if (tring.length() == maxLength) {
-                System.out.println(tring);
+        }
+        for (String string : strings) {
+            if (string.length() == maxLength) {
+                System.out.println(string);
             }
         }
     }
