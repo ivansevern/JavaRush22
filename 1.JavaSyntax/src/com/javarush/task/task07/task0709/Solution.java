@@ -1,34 +1,29 @@
 package com.javarush.task.task07.task0709;
 
-
-
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 /*
-1. Создай список строк
-2. Считай с клав 5 строк и добавь в список
-3. Используй цикл, найди самую короткую строку в списке
-4. Выведи на экран
+Выражаемся покороче
  */
+
 public class Solution {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         //write this code
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<String> list = new ArrayList<>();  //1
-        for (int i = 0; i < 5; i++) {                //2
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
             list.add(reader.readLine());
         }
-        int m = list.get(0).length();                //3
+        int minLength = list.get(0).length();
         for (String l : list){
-            if (l.length() < m) {
-                m = l.length();
+            if (l.length() < minLength) {
+                minLength = l.length();
             }
         }
-        for (String l : list) {                      //4
-            if (l.length() == m) {
+        for (String l : list) {
+            if (l.length() == minLength) {
                 System.out.println(l);
             }
         }
