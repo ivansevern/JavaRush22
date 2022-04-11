@@ -1,33 +1,58 @@
 package com.javarush.task.task07.task0713;
 
-/*
-1. Ввести с клав 20 чисел, сохрани их в список и рассортируй по 3 другим спискам:
-   Число нацело делится на 3 (х%3==0),
-         нацело делится на 2
-         и все остальные
-   Числа, которые делятся на 3 и на 2 одновременно, например 6, попадают в оба списка
-   Порядок объявления списков очень важен
-2. Метод printList должен выводить на экран все элементы списка с новой строки
-3. Используя метод printList выведи эти три списка на экран. Сначало тот, который для х%3,
-   потом тот, который для х%2, потом последний
- */
-
-
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+/*
+Играем в Jолушку
+ */
+
 public class Solution {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         //write this code
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<Integer> list = new ArrayList<>();
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+        for (int i = 0; i < 20; i++) {
+            int number = Integer.parseInt(reader.readLine());
+            numbers.add(number);
+        }
+
+        ArrayList<Integer> divBy3 = new ArrayList<>();
+        ArrayList<Integer> divBy2 = new ArrayList<>();
+        ArrayList<Integer> others = new ArrayList<>();
+        for (int i = 0; i < 20; i++) {
+            int number = numbers.get(i);
+            if ((number % 3 == 0) || (number % 2 == 0)) {
+                if (number % 3 == 0) {
+                    divBy3.add(number);
+                }
+                if (number % 2 == 0) {
+                    divBy2.add(number);
+                }
+            } else {
+                others.add(number);
+            }
+        }
+
+        printList(divBy3);
+        printList(divBy2);
+        printList(others);
+    }
+
+    public static void printList(ArrayList<Integer> list) {
+        for (Integer number : list) {
+            System.out.println(number);
+        }
+    }
+
+       /* ArrayList<Integer> list = new ArrayList<>();
         ArrayList<Integer> list1 = new ArrayList<>();
         ArrayList<Integer> list2 = new ArrayList<>();
         ArrayList<Integer> list3 = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
-            list.add(Integer.parseInt(reader.readLine()));                 //1
+            list.add(Integer.parseInt(reader.readLine()));
             int a = list.get(i);
             if (a % 3 == 0 && a % 2 == 0) {
                 list3.add(a);
@@ -38,17 +63,16 @@ public class Solution {
                 list2.add(a);
             else list1.add(a);
         }
-        printList(list3);                                                 //3
-        printList(list2);
+        printList(list3);
         printList(list1);
     }
 
 
     public static void printList(ArrayList<Integer> list) {
         //write this code
-        for (int i : list) {                                             //2
+        for (int i : list) {
             System.out.println(i);
         }
-    }
+    }*/
 }
 
