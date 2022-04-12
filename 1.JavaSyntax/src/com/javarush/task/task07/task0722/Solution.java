@@ -13,6 +13,16 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         //write this code
-
+        ArrayList<String> strings = new ArrayList<>();
+        while (true) {
+            String string = reader.readLine();;
+            if (string.equals("end")) {
+                break;
+            }
+            strings.add(string);
+        }
+        for (String string : strings) {
+            System.out.println(string);
+        }
     }
 }
