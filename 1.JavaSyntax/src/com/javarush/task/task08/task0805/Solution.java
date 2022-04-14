@@ -26,6 +26,8 @@ public class Solution {
 
     public static void printValues(Map<String, String> map) {
         //напишите тут ваш код
-
+        for (String value : map.values()) {
+            System.out.println(value);
+        }
     }
 }
