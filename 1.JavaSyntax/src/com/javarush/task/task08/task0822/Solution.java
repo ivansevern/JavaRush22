@@ -6,6 +6,10 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+Минимальное из N чисел
+*/
+
 public class Solution {
     public static void main(String[] args) throws Exception {
         List<Integer> integerList = getIntegerList();
