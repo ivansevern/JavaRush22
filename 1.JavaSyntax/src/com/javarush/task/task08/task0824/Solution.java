@@ -1,9 +1,12 @@
 package com.javarush.task.task08.task0824;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+
+/*
+Собираем семейство
+*/
 
 public class Solution {
     public static void main(String[] args) {
