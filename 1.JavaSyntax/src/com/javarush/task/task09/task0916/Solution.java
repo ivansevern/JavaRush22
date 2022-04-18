@@ -3,6 +3,10 @@ package com.javarush.task.task09.task0916;
 import java.io.IOException;
 import java.rmi.RemoteException;
 
+/*
+Перехват checked-исключений
+*/
+
 public class Solution {
     public static void main(String[] args) {
         handleExceptions(new Solution());
