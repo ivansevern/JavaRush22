@@ -3,6 +3,10 @@ package com.javarush.task.task09.task0913;
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
 
+/*
+Исключения. Просто исключения
+*/
+
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
