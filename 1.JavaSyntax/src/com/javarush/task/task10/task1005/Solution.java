@@ -1,7 +1,7 @@
 package com.javarush.task.task10.task1005;
 
 /*
-Задача №4 на преобразование целых типов
+Задача №5 на преобразование целых типов
 */
 
 public class Solution {
