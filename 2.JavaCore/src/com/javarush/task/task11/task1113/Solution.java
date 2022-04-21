@@ -1,7 +1,7 @@
 package com.javarush.task.task11.task1113;
 
 /*
-* Унаследовать животное от рыбы, обезьяну от животного и человека от обезьяны
+Играем в Дарвина
 */
 
 public class Solution {
