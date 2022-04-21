@@ -1,7 +1,7 @@
 package com.javarush.task.task11.task1104;
 
 /*
-* Унаследовать управляющего, директора и секретаря от сотрудника
+Хороши работнички
 */
 
 public class Solution {
@@ -19,5 +19,4 @@ public class Solution {
 
     public class Secretary extends Employee {
     }
-
 }
