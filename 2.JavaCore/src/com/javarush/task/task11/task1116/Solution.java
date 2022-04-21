@@ -1,7 +1,7 @@
 package com.javarush.task.task11.task1116;
 
 /*
-* Расставить правильно цепочку наследования в классах
+Цепочка наследования
 */
 
 public class Solution {
