@@ -1,6 +1,7 @@
 package com.javarush.task.task11.task1102;
+
 /*
-* Унаследовать кота, собаку от животного
+Домашние животные
 */
 
 public class Solution {
@@ -11,10 +12,10 @@ public class Solution {
     public class Pet {
     }
 
-    public class Cat extends Pet {
+    public class Cat extends Pet { //extends Pet
     }
 
-    public class Dog extends Pet {
+    public class Dog extends Pet { //extends Pet
 
     }
 }
