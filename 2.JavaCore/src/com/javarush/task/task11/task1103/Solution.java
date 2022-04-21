@@ -1,8 +1,9 @@
 package com.javarush.task.task11.task1103;
 
 /*
-* Унаследовать от животного
-* */
+Межпланетная ферма
+*/
+
 public class Solution {
     public static void main(String[] args) {
     }
@@ -10,19 +11,19 @@ public class Solution {
     public class Animal {
     }
 
-    public class Cow extends Animal {
+    public class Cow extends Animal { //extends Animal
     }
 
-    public class Pig extends Animal {
+    public class Pig extends Animal { //extends Animal
     }
 
-    public class Sheep extends Animal {
+    public class Sheep extends Animal { //extends Animal
     }
 
-    public class Bull extends Animal {
+    public class Bull extends Animal { //extends Animal
     }
 
-    public class Goat extends Animal {
+    public class Goat extends Animal { //extends Animal
 
     }
 }
