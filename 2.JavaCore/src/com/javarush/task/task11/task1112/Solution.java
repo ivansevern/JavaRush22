@@ -1,7 +1,7 @@
 package com.javarush.task.task11.task1112;
 
 /*
-* Унаследовать IPhone from Apple
+IPhone и Apple
 */
 
 public class Solution {
