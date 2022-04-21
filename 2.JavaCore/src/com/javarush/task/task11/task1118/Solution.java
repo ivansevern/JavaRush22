@@ -1,7 +1,7 @@
 package com.javarush.task.task11.task1118;
 
 /*
-* Расставить правильно цепочку наследования
+Городское хозяйство
 */
 
 public class Solution {
