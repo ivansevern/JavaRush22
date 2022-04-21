@@ -1,7 +1,7 @@
 package com.javarush.task.task11.task1106;
 
 /*
-* Скрыть все внутренние переменные класса
+Скрытный инкапсулированный кот
 */
 
 public class Solution {
@@ -9,6 +9,9 @@ public class Solution {
     }
 
     public class Cat {
+//        public String name;
+//        public int age;
+//        public int weight;
         private String name;
         private int age;
         private int weight;
@@ -16,7 +19,7 @@ public class Solution {
         public Cat() {
         }
 
-        public Cat(String name, final int age, final int weight) {
+        public Cat(String name, int age, int weight) {
             this.name = name;
             this.age = age;
             this.weight = weight;
