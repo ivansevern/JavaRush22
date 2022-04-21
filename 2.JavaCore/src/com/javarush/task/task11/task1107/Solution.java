@@ -1,7 +1,7 @@
 package com.javarush.task.task11.task1107;
 
 /*
-* Скрыть внутренние переменные класса Сат, к котрым есть доступ с помощью методов
+Наш код слишком публичен
 */
 
 public class Solution {
@@ -9,10 +9,13 @@ public class Solution {
     }
 
     public class Cat {
+//        public String name;
+//        public int age;
+//        public int weight;
 
         private String name;
         private int age;
-        private int weight;
+        public int weight;
 
 
         public Cat(String name, final int age, final int weight) {
@@ -22,18 +25,18 @@ public class Solution {
         }
 
         public String getName() {
-            return this.name;
+            return name;
         }
 
-        public void setName(final String name) {
+        public void setName(String name) {
             this.name = name;
         }
 
         public int getAge() {
-            return this.age;
+            return age;
         }
 
-        public void setAge(final int age) {
+        public void setAge(int age) {
             this.age = age;
         }
     }
