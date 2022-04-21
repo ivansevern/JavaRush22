@@ -1,8 +1,7 @@
 package com.javarush.task.task11.task1109;
 
 /*
- * Скрой все внутренние переменные класса Сат и Dog
- * Также скрой все методы, кроме тех, с помощью которых эти классы взаимодействуют друг с другом
+Как кошка с собакой
  */
 
 public class Solution {
@@ -16,20 +15,24 @@ public class Solution {
 }
 
 class Cat {
-    public String name;
-    public int speed;
+//    public String name;
+//    public int speed;
 
-    public Cat(String name, final int speed) {
+    private String name;
+    private int speed;
+
+    public Cat(String name, int speed) {
         this.name = name;
         this.speed = speed;
     }
 
-    public String getName() {
-        return this.name;
+    //    public String getName() {
+    private String getName() {
+        return name;
     }
 
     public int getSpeed() {
-        return this.speed;
+        return speed;
     }
 
     public boolean isDogNear(Dog dog) {
@@ -38,24 +41,27 @@ class Cat {
 }
 
 class Dog {
-    public String name;
-    public int speed;
+//    public String name;
+//    public int speed;
+
+    private String name;
+    private int speed;
 
     public Dog(String name, final int speed) {
         this.name = name;
         this.speed = speed;
     }
 
-    public String getName() {
-        return this.name;
+//    public String getName() {
+    private String getName() {
+        return name;
     }
 
     public int getSpeed() {
-        return this.speed;
+        return speed;
     }
 
     public boolean isCatNear(Cat cat) {
         return this.speed > cat.getSpeed();
     }
 }
-
