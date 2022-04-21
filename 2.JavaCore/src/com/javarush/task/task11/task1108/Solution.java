@@ -1,40 +1,45 @@
 package com.javarush.task.task11.task1108;
 
 /*
-* Скрой все внутренние переменные класса Сат, а также методы,
-* позволяющие менять внутреннее состояние объектов класса Сат
+Неприступный кот
 */
 
 public class Solution {
     public static void main(String[] args) {
     }
 
-    public class Cat {
-    public String name;
-    public int age;
-    public int weight;
+//    public class Cat {
+//    public String name;
+//    public int age;
+//    public int weight;
 
-        public Cat(final String name, final int age, final int weight) {
+    public class Cat {
+        private String name;
+        private int age;
+        private int weight;
+
+        public Cat(final String name, int age, int weight) {
             this.name = name;
             this.age = age;
             this.weight = weight;
         }
 
         public String getName() {
-            return this.name;
+            return name;
         }
 
-        public void setName(final String name) {
+        //        public void setName(String name) {
+        private void setName(String name) {
             this.name = name;
         }
 
         public int getAge() {
-            return this.age;
+            return age;
         }
 
-        public void setAge(final int age) {
+//        public void setAge(int age) {
+        private void setAge(int age) {
             this.age = age;
         }
     }
-
 }
