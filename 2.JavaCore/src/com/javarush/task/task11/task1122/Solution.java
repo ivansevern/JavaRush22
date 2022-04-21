@@ -1,7 +1,7 @@
 package com.javarush.task.task11.task1122;
 
 /*
-* Добавить общий класс к классам фигур
+Помощь шахматной школе
 */
 
 public class Solution {
