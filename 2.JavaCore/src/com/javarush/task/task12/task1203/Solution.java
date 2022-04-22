@@ -1,7 +1,7 @@
 package com.javarush.task.task12.task1203;
 
 /*
-* Переопределить методд getChild в классах, чтобы кот порождал кота, а собака собаку
+Кесарю - кесарево
 */
 
 public class Solution {
@@ -14,10 +14,10 @@ public class Solution {
     }
 
     public static class Pet {
-    public Pet getChild() {
-        return new Pet();
+        public Pet getChild() {
+            return new Pet();
+        }
     }
-}
 
     public static class Cat extends Pet {
         public Pet getChild() {
@@ -30,5 +30,4 @@ public class Solution {
             return new Dog();
         }
     }
-
-    }
+}
