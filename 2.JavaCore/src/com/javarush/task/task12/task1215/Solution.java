@@ -1,8 +1,7 @@
 package com.javarush.task.task12.task1215;
 
 /*
-* Унаследуй классы. Реализуй недостающие методы.
-* Классы Cat, Dog не должгы быть абстрактными
+Кошки не должны быть абстрактными!
 */
 
 public class Solution {
@@ -16,13 +15,13 @@ public class Solution {
     }
 
     public static class Cat extends Pet {
-    public String getName() {
-        return "Кот";
-    }
+        public String getName() {
+            return "Кот";
+        }
 
-    public Pet getChild() {
-        return new Cat();
-    }
+        public Pet getChild() {
+            return new Cat();
+        }
     }
 
     public static class Dog extends Pet {
