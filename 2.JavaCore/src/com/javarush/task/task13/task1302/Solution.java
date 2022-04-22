@@ -1,11 +1,11 @@
 package com.javarush.task.task13.task1302;
 
 /*
-* Добавь к классу AlcoholicBeer интерфейс Drink и реализуй все его методы
+Пиво-2. Возвращение
 */
 
 public class Solution {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         Drink beer = new AlcoholicBeer();
         System.out.println(beer.toString());
     }
@@ -18,6 +18,7 @@ public class Solution {
         public boolean isAlcoholic() {
             return true;
         }
+
         @Override
         public String toString() {
             if (isAlcoholic()) {
