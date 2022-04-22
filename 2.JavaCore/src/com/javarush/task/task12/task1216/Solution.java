@@ -1,13 +1,14 @@
 package com.javarush.task.task12.task1216;
 
 /*
-* Напиши свой public интерфейс CanFly(летать)
-* Добавь в него 2 метода
+Летать охота
 */
 
 public class Solution {
     public static void main(String[] args) {
     }
+
+    //добавьте интерфейс тут
 
     public interface CanFly {
     boolean canFly();
