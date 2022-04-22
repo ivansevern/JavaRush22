@@ -1,7 +1,7 @@
 package com.javarush.task.task12.task1221;
 
 /*
- * Переопредели метод getName в классе Cat так, чтобы программа выдавала на экран надпись: Я - кот
+Все мы немного кошки...
  */
 
 public class Solution {
