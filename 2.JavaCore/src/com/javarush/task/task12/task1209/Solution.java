@@ -1,15 +1,14 @@
 package com.javarush.task.task12.task1209;
 
 /*
-* Напиши public static методы:
-* int min(int, int),
-* long min(long, long),
-* double min(double, double)
+Три метода и минимум
 */
 
 public class Solution {
     public static void main(String[] args) {
     }
+
+    //напишите тут ваши методы
 
     public static int min(int a, int b) {
         return a < b ? a : b;
