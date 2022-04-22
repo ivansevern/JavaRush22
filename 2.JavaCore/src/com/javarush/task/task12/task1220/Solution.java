@@ -1,15 +1,14 @@
 package com.javarush.task.task12.task1220;
 
 /*
-* Напиши public класс Human(), и public интерфейсы CanRun(), CanSwim()
-* Добавь в каждый интерфейс по 1 методу
-* Добавь эти интерфейсы классу Human, но не реализуй методы
-* Объяви класс Human абстрактным
+Класс Human и интерфейсы CanRun, CanSwim
 */
 
 public class Solution {
     public static void main(String[] args) {
     }
+
+    //напишите ваш код тут
 
     public interface CanRun {
         void run();
