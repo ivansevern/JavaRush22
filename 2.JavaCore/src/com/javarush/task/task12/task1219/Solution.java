@@ -1,9 +1,7 @@
 package com.javarush.task.task12.task1219;
 
 /*
- * Есть public интерфейсы CanFly(), CanRun(), CanSwim()
- * Добавь эти интерфейсы классам Human(), Duck(), Penguin(), Airplane(),
- * и не забудь про реализацию методов интерфейсов
+Создаем человека
  */
 
 public class Solution {
