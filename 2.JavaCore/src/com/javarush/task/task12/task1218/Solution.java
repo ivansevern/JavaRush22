@@ -1,8 +1,7 @@
 package com.javarush.task.task12.task1218;
 
 /*
- * Есть public интерфейсы, CanFly(), CanMove(), CanEat()
- * Добавь эти интерфейсыклассам Dog, Car, Duck, Airplane
+Есть, летать и двигаться
  */
 
 public class Solution {
@@ -52,6 +51,4 @@ public class Solution {
         public void move() {
         }
     }
-
-
 }
