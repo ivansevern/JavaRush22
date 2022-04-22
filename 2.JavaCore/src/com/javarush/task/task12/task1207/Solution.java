@@ -1,15 +1,17 @@
 package com.javarush.task.task12.task1207;
 
 /*
-* Реализуй 2 метода: print(int), print(Integer)
+int и Integer
 */
 
 public class Solution {
     public static void main(String[] args) {
+
         print(new Integer(1));
         print(2);
     }
-    //
+
+    //напишите тут ваши методы
     public static void print(int a) {
     }
 
