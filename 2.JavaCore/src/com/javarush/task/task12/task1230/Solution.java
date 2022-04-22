@@ -1,7 +1,7 @@
 package com.javarush.task.task12.task1230;
 
 /*
-* Добавить еще 1 метод, чтобы программа выводила на экран число 10
+Попадание в десятку
 */
 
 public class Solution {
@@ -14,5 +14,9 @@ public class Solution {
 
     public static int transformValue(int i) {
         return i * i;
+    }
+
+    public static int transformValue(Integer i) {
+        return i * 2;
     }
 }
