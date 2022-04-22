@@ -1,12 +1,14 @@
 package com.javarush.task.task12.task1206;
 
 /*
-* Напиши 2 метода: ptint(int), print(String)
+Выполняем перезагрузку!
 */
 
 public class Solution {
     public static void main(String[] args) {
     }
+
+    //напишите тут ваши методы
 
     public static void print(int a) {
     }
