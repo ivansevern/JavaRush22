@@ -1,11 +1,11 @@
 package com.javarush.task.task13.task1301;
 
 /*
-*
+Пиво
 */
 
 public class Solution {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
     }
 
     public interface Drinker {
@@ -16,7 +16,7 @@ public class Solution {
         boolean isReadyToGoHome();
     }
 
-    public interface  Alcoholic extends Drinker {
+    public interface Alcoholic extends Drinker {
         boolean READY_TO_GO_HOME = false;
 
         void sleepOnTheFloor();
