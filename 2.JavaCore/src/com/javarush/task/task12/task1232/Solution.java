@@ -1,7 +1,7 @@
 package com.javarush.task.task12.task1232;
 
 /*
-* Сделать класс Pegasus на основе класса Horse и интерфейса CanFly
+Нужно добавить в программу новую функциональность
 */
 
 public class Solution {
@@ -20,8 +20,7 @@ public class Solution {
     }
 
     public static class Pegasus extends Horse implements CanFly {
-    public void fly() {
+        public void fly() {
+        }
     }
-    }
-
 }
