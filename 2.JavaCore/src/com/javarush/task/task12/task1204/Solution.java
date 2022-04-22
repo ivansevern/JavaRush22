@@ -1,8 +1,7 @@
 package com.javarush.task.task12.task1204;
 
 /*
-* Напиши метод который определяет, объект какого класса ему передали,
-* и выводит на экран одну из надписей: Кошка, Собака, Птица, Лампа
+То ли птица, то ли лампа
 */
 
 public class Solution {
@@ -15,6 +14,7 @@ public class Solution {
     }
 
     public static void printObjectType(Object o) {
+        //напишите тут ваше решение
         if (o instanceof Cat)
             System.out.println("Кошка");
 
@@ -39,6 +39,4 @@ public class Solution {
 
     public static class Lamp {
     }
-
-
 }
