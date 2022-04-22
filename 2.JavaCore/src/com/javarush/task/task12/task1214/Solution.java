@@ -1,8 +1,7 @@
 package com.javarush.task.task12.task1214;
 
 /*
-* Унаследуй класс Cow of Animal
-* Реализуй все недостающие методы в классе Cow
+Корова - тоже животное
 */
 
 public class Solution {
@@ -10,14 +9,12 @@ public class Solution {
     }
 
     public static abstract class Animal {
-    public abstract String getName();
+        public abstract String getName();
     }
 
     public static class Cow extends Animal {
-    public String getName() {
-        return "Корова";
+        public String getName() {
+            return "Корова";
+        }
     }
-    }
-
-
 }
