@@ -1,10 +1,7 @@
 package com.javarush.task.task13.task1310;
 
 /*
-* Добавь интерфейсы Secretary и Boss к классам Manager, Subordinate
-* По одному на каждый.
-* Унаследуй интерфейсы Secretary, Boss от интерфейсов Person, HasManagementPotential так,
-* чтобы все методы у классов Manager, Subordinate были объявлены в каком-то интерфейсе
+Будущий управленец
 */
 
 public class Solution {
@@ -45,7 +42,6 @@ public class Solution {
         }
 
         public void startToWork() {
-
         }
     }
 }
