@@ -1,8 +1,7 @@
 package com.javarush.task.task12.task1205;
 
 /*
-* Нар=пиши метод, который определяет, объект какого класса ему передали, и возвращает результат:
-* одно из значений - Корова, Кит, Собака, Неизвестное животное
+Определимся с животными
 */
 
 public class Solution {
@@ -14,9 +13,13 @@ public class Solution {
     }
 
     public static String getObjectType(Object o) {
-        if (o instanceof Cow) return "Корова";
-        if (o instanceof Dog) return "Собака";
-        if (o instanceof Whale) return "Кит";
+        //напишите тут ваше решение
+        if (o instanceof Cow)
+            return "Корова";
+        if (o instanceof Dog)
+            return "Собака";
+        if (o instanceof Whale)
+            return "Кит";
         return "Неизвестное животное";
     }
 
