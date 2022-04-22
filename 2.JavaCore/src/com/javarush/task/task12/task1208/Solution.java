@@ -1,12 +1,14 @@
 package com.javarush.task.task12.task1208;
 
 /*
-* Напиши 5 методов print() с разными параметрами
+Свобода печати
 */
 
 public class Solution {
     public static void main(String[] args) {
     }
+
+    //напишите тут ваши методы
 
     public static void print(int a) {
     }
