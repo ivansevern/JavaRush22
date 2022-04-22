@@ -1,14 +1,11 @@
 package com.javarush.task.task13.task1311;
 
 /*
-* 1. Создать класс EnglishTranslator, который наследуется от Translator
-* 2. Реализовать все абстрактные методы
-* 3. Сделать так, чтобы программа выводила:
-* Я переводчик с английского - путем вызова метода translate у объекта типа EnglishTranslator
+Нанимаем переводчика
 */
 
 public class Solution {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         EnglishTranslator englishTranslator = new EnglishTranslator();
         System.out.println(englishTranslator.translate());
     }
