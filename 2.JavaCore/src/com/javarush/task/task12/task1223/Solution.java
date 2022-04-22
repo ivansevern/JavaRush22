@@ -1,7 +1,7 @@
 package com.javarush.task.task12.task1223;
 
 /*
-* Добавь 1 метод в класс Cat так, чтобы программа ничего не выводила на экран
+И снова Пушистик...
 */
 
 public class Solution {
@@ -13,14 +13,14 @@ public class Solution {
     }
 
     public static class Pet {
-    protected String name;
+        protected String name;
 
-    public Pet() {
-    }
+        public Pet() {
+        }
 
-    public final String getName() {
-        return name;
-    }
+        public final String getName() {
+            return name;
+        }
 
         public void setName(final String name) {
             this.name = name;
