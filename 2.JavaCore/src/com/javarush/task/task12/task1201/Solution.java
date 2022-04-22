@@ -1,8 +1,7 @@
-package com.javarush.task.task12.rask1201;
+package com.javarush.task.task12.task1201;
 
 /*
-* Переопределили метод getName в классе Whale, чтобы программа выдала:
-* Я не корова, Я кит.
+Киты и коровы
 */
 
 public class Solution {
@@ -19,5 +18,9 @@ public class Solution {
     }
 
     public static class Whale extends Cow {
+        //
+        public String getName() {
+            return "Я не корова, Я - кит.";
+        }
     }
 }
