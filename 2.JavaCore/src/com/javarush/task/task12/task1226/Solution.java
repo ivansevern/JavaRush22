@@ -1,8 +1,8 @@
 package com.javarush.task.task12.task1226;
 
 /*
-* Лазать, летать и бегать
-*/
+ * Лазать, летать и бегать
+ */
 
 public class Solution {
     public static void main(String[] args) {
@@ -10,44 +10,40 @@ public class Solution {
     }
 
     public interface CanFly {
-    void fly();
+        void fly();
     }
 
     public interface CanClimb {
-    void climb();
+        void climb();
     }
 
     public interface CanRun {
-    void run();
+        void run();
     }
 
     public class Cat implements CanRun, CanClimb {
-    public void climb() {
-    }
+        public void climb() {
+        }
 
-    public void run() {
-    }
+        public void run() {
+        }
     }
 
     public class Dog implements CanRun {
-    public void run() {
-    }
+        public void run() {
+        }
     }
 
     public class Tiger extends Cat {
-    public void run() {
-    }
+        public void run() {
+        }
     }
 
     public class Duck implements CanRun, CanFly {
-    public void run() {
+        public void run() {
+        }
+
+        public void fly() {
+        }
     }
-
-    public void fly() {
-    }
-    }
-
-
-
-
 }
