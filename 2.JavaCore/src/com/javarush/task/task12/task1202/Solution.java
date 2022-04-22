@@ -1,7 +1,7 @@
 package com.javarush.task.task12.task1202;
 
 /*
- * Переопределили метод getName в классе Whale, чтобы программа выдала пустую строку
+Кит, коровий потомок
  */
 
 public class Solution {
@@ -18,5 +18,9 @@ public class Solution {
     }
 
     public static class Whale extends Cow {
+        //
+        public String getName() {
+            return "";
+        }
     }
 }
