@@ -1,13 +1,14 @@
 package com.javarush.task.task12.task1217;
 
 /*
- * Напиши public интерфейсы CanFly(), CanRun(), CanSwim()
- * Добавь в каждый интерфейс по 1 методу
+Летать, бежать и плыть
  */
 
 public class Solution {
     public static void main(String[] args) {
     }
+
+    //добавьте интерфейсы тут
 
     public interface CanFly {
         void fly();
