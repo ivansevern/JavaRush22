@@ -1,12 +1,12 @@
 package com.javarush.task.task12.task1233;
 
 /*
-* Напиши метод, который возвращает минимальное число в массиве и его позицию
+Изоморфы наступают
 */
 
 public class Solution {
     public static void main(String[] args) {
-        int[] data = new int[] {1, 2, 3, 5, -2, -8, 0, 77, 5, 5};
+        int[] data = new int[]{1, 2, 3, 5, -2, -8, 0, 77, 5, 5};
 
         Pair<Integer, Integer> result = getMinimumAndIndex(data);
 
@@ -18,26 +18,35 @@ public class Solution {
         if (array == null || array.length == 0) {
             return new Pair<Integer, Integer>(null, null);
         }
-        int index = 0;
-        int minimum = array[index];
 
+        //напишите тут ваш код
+
+     /*   int index = 0;
+        int minimum = array[index];
         for (int i = 1; i < array.length; i++) {
             if (array[i] < minimum) {
                 index = i;
                 minimum = array[i];
             }
+        }*/
+        int index = 0;
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < array[index]) {
+                index = i;
+            }
         }
-        return new Pair<Integer, Integer>(minimum, index);
+
+//        return new Pair<Integer, Integer>(minimum, index);
+        return new Pair<Integer, Integer>(array[index], index);
     }
 
     public static class Pair<X, Y> {
-    public X x;
-    public Y y;
+        public X x;
+        public Y y;
 
         public Pair(final X x, final Y y) {
             this.x = x;
             this.y = y;
         }
     }
-
 }
