@@ -1,8 +1,7 @@
 package com.javarush.task.task12.task1227;
 
 /*
-* Есть интерфейсы CanFly, CanSwim, CanRun
-* Добавь эти интерфейсы классам Duck, Penguin, Toad
+CanFly, CanRun, CanSwim для классов Duck, Penguin, Toad
 */
 
 public class Solution {
@@ -22,18 +21,27 @@ public class Solution {
         void swim();
     }
 
-    public class Penguin implements CanSwim, CanRun {
-    public void swim() {
+    public class Duck implements CanSwim, CanRun, CanFly {
+        public void swim() {
+        }
+
+        public void fly() {
+        }
+
+        public void run(){
+        }
     }
 
-    public void run() {
-    }
+    public class Penguin implements CanSwim, CanRun {
+        public void swim() {
+        }
+
+        public void run() {
+        }
     }
 
     public class Toad implements CanSwim {
-    public void swim() {
+        public void swim() {
+        }
     }
-    }
-
-
 }
