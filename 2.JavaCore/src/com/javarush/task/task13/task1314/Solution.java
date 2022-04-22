@@ -1,13 +1,13 @@
 package com.javarush.task.task13.task1314;
 
 /*
-*
+Большая лисица - это такая лисица
 */
 
 import java.awt.*;
 
 public class Solution {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         BigFox bigFox = new BigFox();
         System.out.println(bigFox.getName());
         System.out.println(bigFox.getColor());
