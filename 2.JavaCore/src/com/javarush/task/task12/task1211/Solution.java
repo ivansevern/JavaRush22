@@ -1,14 +1,14 @@
 package com.javarush.task.task12.task1211;
 
 /*
- * Сделать класс Pet абстрактным
+Абстрактный класс Pet
  */
 
 public class Solution {
     public static void main(String[] args) {
     }
 
-    public static abstract class Pet {
+    public static abstract class Pet { // public static class -> public static abstract class
         public String getName() {
             return "Я - котенок";
         }
