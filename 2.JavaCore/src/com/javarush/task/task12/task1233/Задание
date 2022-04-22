@@ -7,6 +7,6 @@
 
 Класс Solution должен содержать два метода.
 
-Класс Solution должен нсодержать метод getMinimumAndIndex().
+Класс Solution должен содержать метод getMinimumAndIndex().
 
 Метод getMinimumAndIndex() должен возвращать минимальное число в массиве и его позицию(индекс).
