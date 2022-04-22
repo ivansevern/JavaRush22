@@ -1,11 +1,11 @@
 package com.javarush.task.task13.task1303;
 
 /*
-* Реализуй интерфейс Drink в классах  Beer, Cola
+Пиво с колой не мешать
 */
 
 public class Solution {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         print(new Beer());
         print(new Cola());
     }
