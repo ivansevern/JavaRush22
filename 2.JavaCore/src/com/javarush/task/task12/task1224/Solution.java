@@ -1,9 +1,7 @@
 package com.javarush.task.task12.task1224;
 
 /*
-* Напишите метод, который определяет, какой объект передали в него
-* Программа должна выводить на экран одну из надписей:
-* Кот, Тигр, Лев, Бык, Животное
+Неведома зверушка
 */
 
 public class Solution {
@@ -16,6 +14,9 @@ public class Solution {
     }
 
     public static String getObjectType(Object o) {
+
+        //напишите тут ваш код
+
         if (o instanceof Cat)
             return "Кот";
 
