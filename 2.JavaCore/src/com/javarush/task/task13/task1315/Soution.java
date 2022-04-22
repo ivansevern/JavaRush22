@@ -1,25 +1,24 @@
 package com.javarush.task.task13.task1315;
 
 /*
-* Создай классы Dog, Cat, Mouse
-* Реализуй интерфейсы в добавленных классах
-* Кот - может передвигатьсяб кого-то съесть и может быть съеден сам
-* Мышь - может передвигаться и ее могут съесть
-* Собака - может передвигаться и съесть кого-то
+Том, Джерри и Спайк
 */
 
 public class Soution {
     public static void main(String[] args) {
     }
 
+    //может двигаться
     public interface Movable {
         void move();
     }
 
+    //может быть съеден
     public interface Edible {
         void beEaten();
     }
 
+    //может кого-то съесть
     public interface Eat {
         void eat();
     }
