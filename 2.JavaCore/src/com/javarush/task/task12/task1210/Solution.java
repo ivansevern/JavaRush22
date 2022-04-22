@@ -1,16 +1,14 @@
 package com.javarush.task.task12.task1210;
 
 /*
-* Напиши public static методы:
- * int max(int, int),
- * long max(long, long),
- * double max(double, double)
- * Каждый метод должен возвращать максимальное из двух переданных в него чисел
+Три метода и максимум
 */
 
 public class Solution {
     public static void main(String[] args) {
     }
+
+    //напишите тут ваши методы
 
     public static int max(int a, int b) {
         return a > b ? a : b;
