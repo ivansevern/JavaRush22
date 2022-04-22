@@ -1,22 +1,24 @@
 package com.javarush.task.task13.task1304;
 
 /*
-* Создай класс Screen и реализуй в нем интерфесы Selectable и Updatetable
+Selectable и Updatable
 */
 
 public class Solution {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
     }
 
     interface Selectable {
         void onSelect();
     }
 
-    interface Updatetable {
+    interface Updatable {
         void refresh();
     }
 
-    class Screen implements Selectable, Updatetable {
+    //напишите тут ваш класс
+
+    class Screen implements Selectable, Updatable {
         public void onSelect() {
         }
 
