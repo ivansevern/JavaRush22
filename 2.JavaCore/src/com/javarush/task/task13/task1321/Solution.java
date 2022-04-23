@@ -1,7 +1,7 @@
 package com.javarush.task.task13.task1321;
 
 /*
-*
+Исправление ошибок
 */
 
 public class Solution {
@@ -13,11 +13,12 @@ public class Solution {
     interface Desire {
     }
 
-    interface Dream {
+    interface Dream {  // interface Dream implements Hobby -> interface Dream
+//        public static Hobby HOBBY = new Hobby();
         Hobby HOBBY = new Hobby();
     }
 
-    static class Hobby implements Desire, Dream {
+    static class Hobby implements Desire, Dream {  //extends -> implements
         static int INDEX = 1;
 
         @Override
