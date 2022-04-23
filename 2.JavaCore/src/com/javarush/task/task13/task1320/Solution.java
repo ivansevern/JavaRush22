@@ -1,11 +1,11 @@
 package com.javarush.task.task13.task1320;
 
 /*
-*
+Neo
 */
 
 public class Solution {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         System.out.println(Matrix.NEO);
     }
 
@@ -17,11 +17,11 @@ public class Solution {
         DBObject initializeIdAndName(long id, String name);
     }
 
-    static class User implements DBObject {
+    static class User implements DBObject { //static class User -> static class User implements DBObject
         long id;
         String name;
 
-        public User initializeIdAndName(long id, final String name) {
+        public User initializeIdAndName(long id, final String name) { //add constructor
             this.id = id;
             this.name = name;
             return this;
