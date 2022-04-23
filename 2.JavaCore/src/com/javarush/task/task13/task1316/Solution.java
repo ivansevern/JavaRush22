@@ -1,11 +1,11 @@
 package com.javarush.task.task13.task1316;
 
 /*
-* Удали все некорректные строки в интерфейсе Button
+Некорректные строки
 */
 
 public class Solution {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         System.out.println(SimpleObject.NAME);
         System.out.println(Button.NAME);
     }
@@ -15,6 +15,14 @@ public class Solution {
     }
 
     interface Button extends SimpleObject {
+//        final String NAME = "Submit";
+//        public void onPress();
+//        protected void onPress();
+//        void onPress();
+//        private void onPress();
+//        protected String onPress(Object o);
+//        private String onPress(Object o);
+
         String Name = "Submit";
 
         String onPress(Object o);
