@@ -1,7 +1,7 @@
 package com.javarush.task.task13.task1322;
 
 /*
- *
+Интерфейс SimpleObject
  */
 
 public class Solution {
@@ -13,6 +13,7 @@ public class Solution {
         SimpleObject<T> getInstance();
     }
 
+    //
     static class StringObject implements SimpleObject<String> {
         public SimpleObject<String> getInstance() {
             return null;
