@@ -1,10 +1,7 @@
 package com.javarush.task.task13.task1319;
 
 /*
-* 1. Прос=честь с консоли имя файла
-* 2. Считывать строки с консоли, пока пользователь не введет строку exit
-* 3. Записать абсолютно все введенные в п.2 строки в файл:
-* каждую строку - с новой строки
+Писатель в файл с консоли
 */
 
 import java.io.BufferedReader;
@@ -13,7 +10,8 @@ import java.io.FileWriter;
 import java.io.InputStreamReader;
 
 public class Solution {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
+        //напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String destinationFileName = reader.readLine();
 
@@ -23,7 +21,7 @@ public class Solution {
 
         String s = "";
         while (!s.equals("exit")) {
-            s= reader.readLine();
+            s = reader.readLine();
             builder.append(s).append("\n");
         }
 
