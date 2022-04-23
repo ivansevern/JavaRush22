@@ -1,9 +1,5 @@
 package com.javarush.task.task13.task1327;
 
-/*
-*
-*/
-
 public class Person implements RepkaItem {
     private String name;
     private String namePadezh;
