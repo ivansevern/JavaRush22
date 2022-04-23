@@ -1,9 +1,7 @@
 package com.javarush.task.task13.task1326;
 
 /*
-* 1. Ввести имя файла с консоли
-* 2. Прочитать из него набор чисел
-* 3. Вывести в консоли только четные, отсортированные по возврастанию
+Сортировка чисел из файла
 */
 
 import java.io.BufferedReader;
@@ -15,7 +13,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Solution {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
+        //напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String sourceFileName = reader.readLine();
         Scanner scanner = new Scanner(new FileInputStream(sourceFileName));
