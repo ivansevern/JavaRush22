@@ -1,5 +1,9 @@
 package com.javarush.task.task13.task1328;
 
+/*
+Битва роботов
+*/
+
 public class Solution {
     public static void main(String[] args) {
         Robot amigo = new Robot("Амиго");
@@ -17,8 +21,8 @@ public class Solution {
 
     public static void doMove(Robot robotFirst, Robot robotSecond) {
         BodyPart attacked = robotFirst.attack();
-        BodyPart defensed = robotFirst.defense();
+        BodyPart defended = robotSecond.defense();
         System.out.println(String.format("%s атаковал робота %s, атакована %s, защищена %s", robotFirst.getName(),
-                robotSecond.getName(), attacked, defensed));
+                robotSecond.getName(), attacked, defended));
     }
 }

@@ -10,11 +10,4 @@ public class Robot extends AbstractRobot {
     public String getName() {
         return this.name;
     }
-
-
-    @Override
-    public BodyPart defense() {
-        return null;
-    }
 }
-

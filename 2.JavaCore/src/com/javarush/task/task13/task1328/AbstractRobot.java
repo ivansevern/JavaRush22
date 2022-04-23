@@ -20,7 +20,7 @@ public abstract class AbstractRobot implements Attackable, Defensable {
         return attackedBodyPart;
     }
 
-    public BodyPart defence() {
+    public BodyPart defense() {
         BodyPart defendedBodyPart = null;
         hitCount = hitCount + 2;
 
