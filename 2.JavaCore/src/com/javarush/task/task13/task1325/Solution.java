@@ -1,14 +1,14 @@
 package com.javarush.task.task13.task1325;
 
 /*
- *
+Компиляция программы
  */
 
 import java.awt.*;
 
 public class Solution {
     public static void main(String[] args) {
-        Fox bigFox = new BiFox();
+        Fox bigFox = new BigFox();
         System.out.println(bigFox.getName());
         System.out.println(bigFox.getColor());
     }
@@ -23,10 +23,9 @@ public class Solution {
         }
     }
 
-    public static class BiFox extends Fox {
+    public static class BigFox extends Fox {
         public Color getColor() {
             return Color.GRAY;
         }
     }
-
 }
