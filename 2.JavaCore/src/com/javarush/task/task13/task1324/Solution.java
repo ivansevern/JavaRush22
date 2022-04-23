@@ -1,7 +1,7 @@
 package com.javarush.task.task13.task1324;
 
 /*
- *
+Один метод в классе
  */
 
 import java.awt.*;
@@ -21,5 +21,4 @@ public class Solution {
             return "Fox";
         }
     }
-
 }
