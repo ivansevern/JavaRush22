@@ -4,6 +4,10 @@ package com.javarush.task.task14.task1407;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/*
+Player and Dancer
+*/
+
 public class Solution {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
