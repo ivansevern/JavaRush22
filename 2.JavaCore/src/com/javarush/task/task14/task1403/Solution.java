@@ -1,9 +1,7 @@
-package task14.task1403;
+package com.javarush.task.task14.task1403;
 
 /*
- * 1. Правильно расставить наследования между Building и School
- * 2. Подумать, объект какого класса должны возвращать методы getSchool и getBuilding
- * 3. Изменить null на объект класса  Building или School
+Building и School
  */
 
 public class Solution {
@@ -25,15 +23,12 @@ public class Solution {
         return new Building();
     }
 
-
-
     static class School extends Building {
         @Override
         public String toString() {
             return "School";
         }
     }
-
 
     static class Building {
         @Override
