@@ -1,7 +1,12 @@
-package task14.task1401;
+package com.javarush.task.task14.task1401;
+
+/*
+Bingo!
+*/
 
 public class Solution {
     public static void main(String[] args) {
+//        Object animal = new Pet();
         Object animal = new Tiger();
 
         boolean isCat = animal instanceof Cat;
