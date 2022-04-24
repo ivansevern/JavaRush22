@@ -1,14 +1,15 @@
-package task14.task1404;
-
-/*
-*
-*/
+package com.javarush.task.task14.task1404;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/*
+Коты
+*/
+
 public class Solution {
     public static void main(String[] args) throws Exception {
+        //напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         String key;
