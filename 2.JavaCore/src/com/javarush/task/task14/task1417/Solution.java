@@ -3,6 +3,10 @@ package com.javarush.task.task14.task1417;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+Валюты
+*/
+
 public class Solution {
     public static void main(String[] args) {
         Person ivan = new Person("Иван");
