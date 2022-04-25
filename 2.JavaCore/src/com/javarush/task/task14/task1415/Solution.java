@@ -1,11 +1,11 @@
 package com.javarush.task.task14.task1415;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /*
 Клининговый центр
 */
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Solution {
     public static void main(String[] args) {
