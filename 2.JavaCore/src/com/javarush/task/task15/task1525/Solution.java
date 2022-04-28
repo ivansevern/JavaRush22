@@ -1,15 +1,15 @@
 package com.javarush.task.task15.task1525;
 
-/*
-Файл в статическом блоке
-*/
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+/*
+Файл в статическом блоке
+*/
 
 public class Solution {
     public static List<String> lines = new ArrayList<>();
