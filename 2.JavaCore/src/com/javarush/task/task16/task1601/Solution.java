@@ -1,8 +1,7 @@
 package com.javarush.task.task16.task1601;
 
 /*
-* Создать public static class TestThread - нить с интерфейсом Runnable
-* TestThread должен выводить в консоль My first thread
+My first thread
 */
 
 public class Solution {
@@ -10,7 +9,7 @@ public class Solution {
         TestThread task = new TestThread();
         new Thread(task).start();
     }
-
+    //
     public static class TestThread implements Runnable {
         @Override
         public void run() {
