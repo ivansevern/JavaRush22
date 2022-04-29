@@ -1,14 +1,11 @@
 package com.javarush.task.task16.task1614;
 
-/*
-* 1. Разберись, что делает программа
-* 2. Реализуй догику метода printCountdown так, чтобы программа каждые полсекунды выводила
-* объект из переменной list
-* Выводить нужно в обратном порядке - от переданного в Countdown индекса до 0
-*/
-
 import java.util.ArrayList;
 import java.util.List;
+
+/*
+Обратный отсчет
+*/
 
 public class Solution {
     public static volatile List<String> list = new ArrayList<String>(5);
@@ -41,11 +38,10 @@ public class Solution {
         }
 
         public void printCountdown() throws InterruptedException {
-            //
+            //add your code here
             countFrom--;
             Thread.sleep(500);
             System.out.println(list.get(countFrom));
         }
     }
-
 }
