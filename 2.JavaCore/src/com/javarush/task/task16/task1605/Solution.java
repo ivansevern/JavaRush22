@@ -1,15 +1,10 @@
 package com.javarush.task.task16.task1605;
 
-/*
-* 1. Измени класс Violin так, чтобы он стал таском для нити. Используй интерфейс MusicianInstrument
-* 2. Реализуй необходимый метод в нити Violin. Реализация должна быть следующей:
-* 2.1 Считай время начала игры - метод startPlaying()
-* 2.2 Подожди 1 сек - метод sleepNSeconds(int n), где n - кол-во сек.
-* 2.3. Считай время окончания игры - метод stopPlaying()
-* 2.4 Выведи на консоль продолжительность игры в милисекундах. Используй методы из п.21, 2.3
-*/
-
 import java.util.Date;
+
+/*
+Поговорим о музыке
+*/
 
 public class Solution {
     public static int delay = 1000;
@@ -45,7 +40,6 @@ public class Solution {
             return new Date();
         }
 
-        @Override
         public Date stopPlaying() {
             System.out.println(this.owner + " is stopping to play");
             return new Date();
