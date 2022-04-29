@@ -1,10 +1,7 @@
 package com.javarush.task.task16.task1615;
 
 /*
- * 1. Разберись, что делает программа
- * 2. Исправь метод takingOff() - сейчас он работает очень долго.
- * Взлет должен занимать 100 милисекунд
- * 3. Реализуй метод waiting по аналогии с методом takingOff
+Аэропорт
  */
 
 public class Solution {
@@ -17,6 +14,7 @@ public class Solution {
     }
 
     private static void waiting() {
+        //напишите тут ваш код
         try {
             Thread.sleep(100);
         } catch (InterruptedException e) {
@@ -24,6 +22,7 @@ public class Solution {
     }
 
     private static void takingOff() {
+        //исправь этот метод
         try {
             Thread.sleep(100);
         } catch (InterruptedException e) {
@@ -36,26 +35,25 @@ public class Solution {
             start();
         }
 
-        @Override
         public void run() {
             boolean isAlreadyTakenOff = false;
             while (!isAlreadyTakenOff) {
                 if (RUNWAY.trySetTakingOffPlane(this)) {
                     System.out.println(getName() + " взлетает");
-                    takingOff();
+                    takingOff(); //взлетает
                     System.out.println(getName() + " уже в небе");
                     isAlreadyTakenOff = true;
                     RUNWAY.setTakingOffPlane(null);
                 } else if (!this.equals(RUNWAY.getTakingOffPlane())) {
                     System.out.println(getName() + " ожидает");
-                    waiting();
+                    waiting(); //ожидает
                 }
             }
         }
     }
 
 
-    public static class Runway {
+    public static class Runway { //взлетная полоса
         private Thread t;
 
         public Thread getTakingOffPlane() {
@@ -79,4 +77,3 @@ public class Solution {
         }
     }
 }
-
