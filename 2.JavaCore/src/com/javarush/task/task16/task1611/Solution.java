@@ -1,10 +1,7 @@
 package com.javarush.task.task16.task1611;
 
 /*
-* 1. Разберись, что делает программа
-* 2. Реализуй логику метода printTikTak:
-* 2.1 Через первые полсекунды должна выводиться в консоль фраза: Tik
-* 2.2 Через вторые полсекунды должна выводиться в консоль фраза: Tak
+Часы
 */
 
 public class Solution {
@@ -35,7 +32,7 @@ public class Solution {
         }
 
         public void printTikTak() throws InterruptedException {
-            //
+            //add your code here
             Thread.sleep(500);
             System.out.println("Tik");
             Thread.sleep(500);
