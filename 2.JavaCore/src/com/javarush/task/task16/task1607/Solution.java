@@ -1,15 +1,11 @@
 package com.javarush.task.task16.task1607;
 
-/*
-* 1. Посчитай кол-во финишированных лошадей и возвратить его. Используя метод isFinished()
-* 2. Если лошадь еще не пришла к финишу (!isFinished(), то
-* 2.1 Вывести в консоль Waiting for " + horse.getName()
-* 2.2 Подождать, пока она завершит гонку.
-* 2.3 Не считать такую лошадь финишировавшей
-*/
-
 import java.util.ArrayList;
 import java.util.List;
+
+/*
+Horse Racing
+*/
 
 public class Solution {
     public static void main(String[] args) throws InterruptedException{
@@ -67,7 +63,6 @@ public class Solution {
                     isFinished = true;
                     s = " has finished the race!";
                     System.out.println(getName() + s);
-
             }
         }
     }
