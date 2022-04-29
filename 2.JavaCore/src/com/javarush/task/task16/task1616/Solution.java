@@ -1,14 +1,12 @@
 package com.javarush.task.task16.task1616;
 
-/*
-* 1. Напиши реализацию метода run в нити Stopwatch
-* 2. Stopwatch должен посчитать количество секунд, которое прошло от создания нити до второй строки
-* 3. Выведи количество секунд в консоль
-*/
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
+/*
+Считаем секунды
+*/
 
 public class Solution {
     public static void main(String[] args) throws IOException {
@@ -16,6 +14,7 @@ public class Solution {
         BufferedReader reader = new BufferedReader(in);
         //create and run thread
         Stopwatch stopwatch = new Stopwatch();
+        stopwatch.start();
         //read a string
         reader.readLine();
         stopwatch.interrupt();
@@ -29,6 +28,7 @@ public class Solution {
 
         public void run() {
             try {
+                //напишите тут ваш код
                 Thread current = Thread.currentThread();
 
                 while (!currentThread().isInterrupted()) {
