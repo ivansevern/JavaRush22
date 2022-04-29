@@ -1,7 +1,7 @@
 package com.javarush.task.task16.task1619;
 
 /*
-*
+А без interrupt слабо?
 */
 
 public class Solution {
