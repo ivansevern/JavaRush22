@@ -1,10 +1,7 @@
 package com.javarush.task.task16.task1608;
 
 /*
-* 1. Разберись, что делает программа
-* 2. Нужно сделать так, чтобы Иванов сказал больше всего речей на политических дебатах
-* 3. Подумай, какой метод должен вызвать у объекта ivanov,
-* чтобы Иванов разговаривал, пока не завершится все свободное время
+Продвижение на политических дебатах
 */
 
 public class Solution {
@@ -33,7 +30,6 @@ public class Solution {
             start();
         }
 
-        @Override
         public void run() {
             while (utteranceCount < totalSpeechCount * utterancesPerSpeech) {
                 utteranceCount++;
@@ -50,5 +46,3 @@ public class Solution {
         }
     }
 }
-
-
