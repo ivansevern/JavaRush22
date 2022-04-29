@@ -1,10 +1,6 @@
-/*
 package com.javarush.task.task16.task1631;
 
-
-import task16.task1631.common.*;
-
-
+import com.javarush.task.task16.task1631.common.*;
 
 public class ImageReaderFactory {
     private ImageReaderFactory() {
@@ -32,4 +28,3 @@ public class ImageReaderFactory {
         return imageReader;
     }
 }
-*/
