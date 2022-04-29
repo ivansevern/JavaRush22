@@ -1,8 +1,7 @@
 package com.javarush.task.task16.task1604;
 
 /*
-* 1.Создать tack (public static class SpecialThread, который реализует интерфейс Runnable
-* 2. SpecialThread должен выводить в консоль свой стек-трейс
+Вывод стек-трейса
 */
 
 public class Solution {
@@ -17,6 +16,7 @@ public class Solution {
         }
     }
 
+    //
     public static class SpecialThread implements Runnable {
         public void run() {
             for (StackTraceElement element : Thread.currentThread().getStackTrace()) {
