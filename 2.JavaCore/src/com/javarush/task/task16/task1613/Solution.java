@@ -1,9 +1,7 @@
 package com.javarush.task.task16.task1613;
 
 /*
-* 1. Разберись, что делает программа
-* 2. Реализуй логику метода printTime так, чтобы каждую секунду выдавалось время начиная
-* установленного в конструкторе (время, которое передали в конструктор, не выводить)
+Big Ben Clock
 */
 
 public class Solution {
@@ -40,7 +38,7 @@ public class Solution {
         }
 
         private void printTime() throws InterruptedException {
-            //
+            //add your code here
             seconds++;
             if (seconds == 60) {
                 seconds = 0;
@@ -60,7 +58,7 @@ public class Solution {
             if (hours == 0 && minutes == 0 && seconds == 0) {
                 System.out.println(String.format("В г. %s сейчас полночь!", cityName));
             } else {
-                System.out.println(String.format("В г. %s сейчас %d:%d:%d!", cityName, hours, seconds));
+                System.out.println(String.format("В г. %s сейчас %d:%d:%d!", cityName, hours, minutes, seconds));
             }
         }
     }
