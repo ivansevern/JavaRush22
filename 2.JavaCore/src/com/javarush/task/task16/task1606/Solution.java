@@ -1,18 +1,18 @@
 package com.javarush.task.task16.task1606;
 
-/*
-*
-*/
-
 import java.util.ArrayList;
 import java.util.List;
+
+/*
+join: в нужное время в нужном месте
+*/
 
 public class Solution {
     public static void main(String[] args) throws InterruptedException{
         PrintListThread firstThread = new PrintListThread("firstThread");
         PrintListThread secondThread = new PrintListThread("secondThread");
         firstThread.start();
-        firstThread.join();
+        firstThread.join(); //
         secondThread.start();
     }
 
