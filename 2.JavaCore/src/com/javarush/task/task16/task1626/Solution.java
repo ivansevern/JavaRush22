@@ -1,7 +1,7 @@
 package com.javarush.task.task16.task1626;
 
 /*
-*
+Создание по образцу
 */
 
 public class Solution {
@@ -12,7 +12,8 @@ public class Solution {
         new Thread(new CountUpRunnable(), "Увеличиваем").start();
     }
 
-    public static class CountUpRunnable implements Runnable {
+    public static class CountUpRunnable implements Runnable { //implements Runnable
+        //add your code here
         private int countIndexUp;
 
         public void run() {
@@ -27,7 +28,6 @@ public class Solution {
             }
         }
 
-        @Override
         public String toString() {
             return Thread.currentThread().getName() + ": " + countIndexUp;
         }
