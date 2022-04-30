@@ -1,14 +1,5 @@
 package com.javarush.task.task16.task1628;
 
-/*
-* 1. Каждая нить должна читать с консли строки. Испольшуй готовый static BufferedReader reader
-* 1.2 Используй AtomicInteger readStringCount, чтобы посчитать, сколько уже считано с консоли всеми нитями
-* 2. Реализуй логику метода run
-* 2.1 Пока нить не прервана isInterrupted читай с консоли строки и добавляй их в поле List<String> result
-* 2.2 Используй readStringCount для подсчета уже считанных с консоли строк
-* 2.3 Тело метода run нужно поместить в блок try-catch
-*/
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -16,13 +7,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/*
+Кто первый встал - того и тапки
+*/
+
 public class Solution {
     public static volatile AtomicInteger readStringCount = new AtomicInteger(0);
     public static volatile BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
+        //read count of strings
         int count = Integer.parseInt(reader.readLine());
 
+        //init threads
         ReaderThread consoleReader1 = new ReaderThread();
         ReaderThread consoleReader2 = new ReaderThread();
         ReaderThread consoleReader3 = new ReaderThread();
@@ -47,8 +44,8 @@ public class Solution {
     public static class ReaderThread extends  Thread {
         private List<String> result = new ArrayList<>();
 
-        @Override
         public void run() {
+            //write your code here
             String string;
             try {
                 while (!Thread.currentThread().isInterrupted()) {
