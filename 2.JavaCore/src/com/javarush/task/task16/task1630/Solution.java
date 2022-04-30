@@ -1,25 +1,18 @@
 package com.javarush.task.task16.task1630;
 
-/*
-* 1. Разберись, что делает программа
-* 2. В статическом блоке считай 2 имени файла firstFileName, secondFileName
-* 3. Внутри класса Solution создать нить  public static ReadFileThread, которая реализует интерфейс ReadFileInterface
-* 3.1 Метод setFileName должен устанавливать имя файла, из которого будет читаться содержимое
-* 3.2 Метод getFileContent должен возвращать содержимое файла
-* 3.3 В методе run считать содержимое файла, закрой поток. Раздели пробелом строки файла
-* 4. Подумай в каком месте нужно подождать окончание работы нити, чтобы обеспечить последовательность
-* вывод файлов
-* 4.1 Для этого добавь вызов соответствующего метода
-*/
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/*
+Последовательный вывод файлов
+*/
+
 public class Solution {
     public static String firstFileName;
     public static String secondFileName;
+    //write your code here
 
     static {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
@@ -52,6 +45,7 @@ public class Solution {
 
         void start();
     }
+    //write your code here
 
     public static class ReadFileThread extends Thread implements ReadFileInterface {
         String fileName;
@@ -62,10 +56,6 @@ public class Solution {
             this.fileName = fullFileName;
         }
 
-        @Override
-        public String getFileContent() {
-            return null;
-        }
 
         @Override
         public void run() {
@@ -80,8 +70,8 @@ public class Solution {
         }
 
         @Override
-        public String toString() {
-            return fileContent;
+        public String getFileContent() {
+            return null;
         }
     }
 }
