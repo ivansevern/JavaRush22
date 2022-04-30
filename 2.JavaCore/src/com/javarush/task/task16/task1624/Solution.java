@@ -1,7 +1,7 @@
 package com.javarush.task.task16.task1624;
 
 /*
-*
+Последовательность выполнения нитей I Java Core: 6 уровень, 13 лекция
 */
 
 public class Solution {
@@ -10,7 +10,7 @@ public class Solution {
 
     public static void main(String[] args) throws Exception{
         t.start();
-        t.join();
+        t.join(); //add
         for (int i = 0; i < 10; i++) {
             System.out.println(message + i);
             sleep();
