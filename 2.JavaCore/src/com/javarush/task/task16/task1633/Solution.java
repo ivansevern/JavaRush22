@@ -1,5 +1,9 @@
 package com.javarush.task.task16.task1633;
 
+/*
+Отдебажим все на свете
+*/
+
 public class Solution {
     public static Thread.UncaughtExceptionHandler handler = new OurUncaughtExceptionHandler();
 
@@ -20,6 +24,7 @@ public class Solution {
     }
 
     public static class TestedThread extends Thread {
+//        public TestedThread(Thread.UncaughtExceptionHandler handler) {
         public TestedThread(UncaughtExceptionHandler handler) {
             setUncaughtExceptionHandler(handler);
             start();
