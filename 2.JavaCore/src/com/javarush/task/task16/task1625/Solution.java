@@ -1,7 +1,7 @@
 package com.javarush.task.task16.task1625;
 
 /*
-*
+Взаимная блокировка
 */
 
 public class Solution {
@@ -11,7 +11,7 @@ public class Solution {
     public static void main(String[] args) {
         t1.start();
         t2.start();
-        t1.interrupt();
+        t1.interrupt(); //add
     }
 
     public static class T1 extends Thread {
