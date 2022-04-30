@@ -1,8 +1,7 @@
 package com.javarush.task.task16.task1621;
 
 /*
- * 1. В методе printMsg присвой переменной t текущую нить
- * 2. В методе printMsg после всех действий поставь задержку в 1 милисекунду
+Thread.currentThread - всегда возвращает текущую нить
  */
 
 public class Solution {
@@ -24,9 +23,10 @@ public class Solution {
         }
 
         public void printMsg() {
-            Thread t = Thread.currentThread();
+            Thread t = Thread.currentThread(); //null -> Thread.currentThread()
             String name = t.getName();
             System.out.println("Name =" + name);
+            //add sleep here
             try {
                 Thread.sleep(1);
             } catch (InterruptedException e) {
