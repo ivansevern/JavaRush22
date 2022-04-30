@@ -1,13 +1,11 @@
 package com.javarush.task.task16.task1627;
 
-/*
-*Три человека играют в игру. Каждый игрок ъарактеризуется двумя параметрами:
-* фамилией(name) и количеством действий в сек (rating).
-* Нужно вывести в консоль ход игры и определить победителя и проигравших
-*/
-
 import java.util.ArrayList;
 import java.util.List;
+
+/*
+Поиграем?
+*/
 
 public class Solution {
     public static void main(String[] args) throws InterruptedException {
@@ -31,7 +29,6 @@ public class Solution {
         protected Gamer gamer2 = new Gamer("Petrov", 1);
         protected Gamer gamer3 = new Gamer("Sidorov", 5);
 
-        @Override
         public void run() {
             gamer1.start();
             gamer2.start();
@@ -39,7 +36,6 @@ public class Solution {
 
             while (!isWinnerFound) {
             }
-
             gamer1.interrupt();
             gamer2.interrupt();
             gamer3.interrupt();
@@ -56,6 +52,7 @@ public class Solution {
 
         @Override
         public void run() {
+            //add your code here
             int i = 0;
             try {
                 while (i < OnlineGame.steps.size()) {
