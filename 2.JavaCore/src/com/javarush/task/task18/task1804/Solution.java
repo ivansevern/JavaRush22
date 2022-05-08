@@ -1,4 +1,4 @@
-package com.javarush.task.task1804;
+package com.javarush.task.task18.task1804;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
