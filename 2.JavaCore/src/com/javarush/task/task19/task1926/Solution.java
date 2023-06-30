@@ -5,6 +5,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/*
+Перевертыши
+ */
+
 public class Solution {
     public static void main(String[] args) {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
